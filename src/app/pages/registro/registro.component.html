@@ -1,1 +1,83 @@
 <p>registro works!</p>
+<form [formGroup]="registroForm" (ngSubmit)="onSubmit()">
+
+    <label for="email">email</label>
+    <input type="email" name="email" id="email" formControlName="email">
+
+    @if (registroForm.controls.email.invalid && 
+    registroForm.controls.email.touched) {
+        @if(registroForm.controls.email.errors?.['required']) {
+            <small> El mail es requerido. </small>
+        } @else if (registroForm.controls.email.errors?.['email']) {
+            <small> Debe ingresar un mail válido. </small>
+        }
+    }
+
+    <label for="password">password</label>
+    <input type="password" name="password" id="password" formControlName="password">
+
+    @if (registroForm.controls.password.invalid && 
+    (registroForm.controls.password.touched || 
+    registroForm.controls.password.dirty)) {
+        @if(registroForm.controls.password.errors?.['required']) {
+            <small> La contraseña es requerida. </small>
+        } @else if (registroForm.controls.password.errors?.['minlength']) {
+            <small> Su contraseña debe tener un mínimo de 6 caracteres. </small>
+        } @else if (registroForm.controls.password.errors?.['passworderror']) {
+            <small> Las contraseñas no coinciden. </small>
+        }
+    }
+
+    <label for="repeatPassword">repeat password</label>
+    <input type="password" name="repeatPassword" id="repeatPassword" formControlName="repeatPassword">
+
+    @if (registroForm.controls.repeatPassword.invalid && 
+    (registroForm.controls.repeatPassword.touched ||
+    registroForm.controls.repeatPassword.dirty
+    )) {
+        @if(registroForm.controls.repeatPassword.errors?.['required']) {
+            <small> Repetir la contraseña es requerido. </small>
+        } @else if (registroForm.controls.repeatPassword.errors?.['minlength']) {
+            <small> Su contraseña debe tener un mínimo de 6 caracteres. </small>
+        } @else if (registroForm.controls.repeatPassword.errors?.['passworderror']) {
+            <small> Las contraseñas no coinciden. </small>
+        }
+    }
+
+    <label for="name">name</label>
+    <input type="text" name="name" id="name" formControlName="name">
+
+    @if (registroForm.controls.name.invalid && 
+    registroForm.controls.name.touched) {
+        @if(registroForm.controls.name.errors?.['required']) {
+            <small> El nombre es requerido. </small>
+        }
+    }
+
+    <label for="surname">surname</label>
+    <input type="text" name="surname" id="surname" formControlName="surname">
+
+    @if (registroForm.controls.surname.invalid && 
+    registroForm.controls.surname.touched) {
+        @if(registroForm.controls.surname.errors?.['required']) {
+            <small> El apellido es requerido. </small>
+        }
+    }
+
+    <label for="age">age</label>
+    <input type="number" name="age" id="age" formControlName="age">
+
+    @if (registroForm.controls.age.invalid && 
+    (registroForm.controls.age.touched || 
+    registroForm.controls.age.dirty)) {
+        @if(registroForm.controls.age.errors?.['required']) {
+            <small> La edad es requerida. </small>
+        } @else if (registroForm.controls.age.errors?.['min']) {
+            <small> Debe ingresar una edad mayor a 1. </small>
+        } @else if (registroForm.controls.age.errors?.['max']) {
+            <small> Debe ingresar una edad menor a 150. </small>
+        }
+    }
+
+    <input type="submit" value="submit">
+</form>

@@ -1,11 +1,53 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ReactiveFormsModule, FormControl, FormGroup, Validators, AbstractControl, ValidationErrors, ValidatorFn } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+
+
+export const ValidatorRepeatedPassword = (password: FormControl): ValidatorFn => {
+  return (control: AbstractControl): ValidationErrors | null => {
+    console.log("Entro al validator")
+    console.log(`${password.value}`)
+    console.log(`${control.value}`)
+    return (password.value == control.value) ? null : { passworderror: "Las contraseñas no coinciden"};
+  }
+}
+
 
 @Component({
   selector: 'app-registro',
-  imports: [],
+  imports: [ReactiveFormsModule, CommonModule],
   templateUrl: './registro.component.html',
   styleUrl: './registro.component.css'
 })
-export class RegistroComponent {
 
+
+export class RegistroComponent implements OnInit{
+
+  registroForm = new FormGroup({
+    email: new FormControl('', [Validators.required, Validators.email]),
+    password: new FormControl('', [Validators.required, Validators.minLength(6)]),
+    repeatPassword: new FormControl('', [Validators.required, Validators.minLength(6)]),
+    name: new FormControl('', [Validators.required]),
+    surname: new FormControl('', [Validators.required]),
+    age: new FormControl('', [Validators.required, Validators.min(1), Validators.max(150)])
+  })
+
+  ngOnInit(): void {
+    this.registroForm.controls.password.addValidators(ValidatorRepeatedPassword(this.registroForm.controls.repeatPassword))
+    this.registroForm.controls.repeatPassword.addValidators(ValidatorRepeatedPassword(this.registroForm.controls.password))
+    this.registroForm.controls.password.updateValueAndValidity();
+    this.registroForm.controls.repeatPassword.updateValueAndValidity();
+  }
+  
+  onSubmit(){
+
+    if(this.registroForm.valid){
+      console.log("valido")
+      console.log(this.registroForm.value.name)
+      console.log(this.registroForm.value.email)
+    } else {
+      console.log("invalido")
+      console.log(this.registroForm.errors)
+    }
+  }
 }
