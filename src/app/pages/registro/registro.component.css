@@ -2,8 +2,29 @@ form {
     display: flex;
     flex-direction: column;
     width: 25dvw;
+    margin: 0 auto;
+    gap: 10px;
+}
+
+div.field {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    text-align: center;
+}
+
+input[type="submit"] {
+    width: 33%;
+    align-self: center;
 }
 
 small {
     color: firebrick;
+}
+
+input[type="email"], input[type="password"] {
+    padding-block: 10px;
+    padding-inline: 10px;
 }

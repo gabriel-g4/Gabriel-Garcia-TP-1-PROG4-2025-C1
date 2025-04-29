@@ -1,13 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { ReactiveFormsModule, FormControl, FormGroup, Validators, AbstractControl, ValidationErrors, ValidatorFn } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-
+import { MatFormFieldModule} from '@angular/material/form-field'
+import { MatInputModule } from '@angular/material/input'
 
 export const ValidatorRepeatedPassword = (password: FormControl): ValidatorFn => {
   return (control: AbstractControl): ValidationErrors | null => {
-    console.log("Entro al validator")
-    console.log(`${password.value}`)
-    console.log(`${control.value}`)
     return (password.value == control.value) ? null : { passworderror: "Las contraseñas no coinciden"};
   }
 }
@@ -15,7 +13,7 @@ export const ValidatorRepeatedPassword = (password: FormControl): ValidatorFn =>
 
 @Component({
   selector: 'app-registro',
-  imports: [ReactiveFormsModule, CommonModule],
+  imports: [ReactiveFormsModule, CommonModule, MatFormFieldModule, MatInputModule],
   templateUrl: './registro.component.html',
   styleUrl: './registro.component.css'
 })
