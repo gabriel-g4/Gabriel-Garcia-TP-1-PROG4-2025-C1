@@ -25,15 +25,13 @@ export class RegistroComponent implements OnInit{
     email: new FormControl('', [Validators.required, Validators.email]),
     password: new FormControl('', [Validators.required, Validators.minLength(6)]),
     repeatPassword: new FormControl('', [Validators.required, Validators.minLength(6)]),
-    name: new FormControl('', [Validators.required]),
-    surname: new FormControl('', [Validators.required]),
-    age: new FormControl('', [Validators.required, Validators.min(1), Validators.max(150)])
+    // name: new FormControl('', [Validators.required]),
+    // surname: new FormControl('', [Validators.required]),
+    // age: new FormControl('', [Validators.required, Validators.min(1), Validators.max(150)])
   })
 
   ngOnInit(): void {
-    this.registroForm.controls.password.addValidators(ValidatorRepeatedPassword(this.registroForm.controls.repeatPassword))
     this.registroForm.controls.repeatPassword.addValidators(ValidatorRepeatedPassword(this.registroForm.controls.password))
-    this.registroForm.controls.password.updateValueAndValidity();
     this.registroForm.controls.repeatPassword.updateValueAndValidity();
   }
   
@@ -41,7 +39,7 @@ export class RegistroComponent implements OnInit{
 
     if(this.registroForm.valid){
       console.log("valido")
-      console.log(this.registroForm.value.name)
+      // console.log(this.registroForm.value.name)
       console.log(this.registroForm.value.email)
     } else {
       console.log("invalido")
