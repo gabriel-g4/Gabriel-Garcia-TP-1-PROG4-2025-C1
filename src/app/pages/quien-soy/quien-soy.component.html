@@ -1,0 +1,37 @@
+
+<section>
+    <h2>Sobre mí</h2>
+    <p> Hola! Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita qui, dolorum, ullam vel est quibusdam ratione, dignissimos mollitia ad excepturi quae nisi ipsa facere eum dolor consequatur! Sunt cum cumque tempore culpa quisquam sed delectus, eius ipsam illo temporibus! Non numquam architecto quaerat explicabo temporibus aperiam cum dolorum animi porro?</p>
+</section>
+
+
+<section *ngIf="userData.exists">
+    <div class="github-card">
+        <h3> Mis datos de github. </h3>
+    
+        <img [src]="userData.avatarUrl" alt="Foto de perfil github">
+        <ul>
+            <li *ngIf="userData.name">
+                <p> Nombre : <b>{{ userData.name }}</b> </p>
+            </li>
+            <li>
+                <p> Nombre de usuario : <b>{{ userData.login }}</b></p>
+            </li>
+            <li *ngIf="userData.bio">
+                <p> Bio : <b> {{ userData.bio }}</b> </p>
+            </li>
+            <li *ngIf="userData.location">
+                <p> Locación : <b>{{ userData.location }}</b> </p>
+            </li>
+            <li>
+                <p> Repositorios públicos : <b>{{ userData.publicRepos }}</b></p>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h3> Mi juego personalizado </h3>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quasi sapiente laudantium harum nesciunt labore dolor, explicabo similique sint accusamus commodi et minima consectetur rerum? Nobis, in voluptatibus excepturi eum sit officiis natus cupiditate fuga voluptatem velit, amet reprehenderit quia dolorum aperiam asperiores facilis ipsum a ipsam placeat officia adipisci!</p>
+</section>

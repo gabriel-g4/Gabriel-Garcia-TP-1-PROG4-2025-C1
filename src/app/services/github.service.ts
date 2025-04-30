@@ -11,7 +11,7 @@ export class GithubService {
 
     constructor (private http : HttpClient) {}
 
-    profileUrl = "placeholder"
+    profileUrl = "https://api.github.com/users/gabriel-g4"
 
     getProfile() : Observable<any> {
         return this.http.get(this.profileUrl)

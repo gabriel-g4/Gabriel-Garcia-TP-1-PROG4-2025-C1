@@ -1,0 +1,40 @@
+section {
+    text-align: center;
+    margin: 0 auto 100px auto;
+    width: 75vw;
+}
+
+img {
+    width: 194px;
+    height: 194px;
+    border-radius: 1000px;
+    border: 1px solid rgb(231, 229, 229);
+}
+
+img:hover{
+    opacity: 0.5;
+    transform: scale(1.05);
+    border: none;
+}
+
+.github-card {
+    margin: 0 auto;
+    padding: 20px;
+    width: 50vw;
+    border-radius: 50px;
+    border: 1px solid rgba(104, 100, 100, 0.125);
+}
+
+ul {
+    text-align: left;
+    li {
+
+        list-style-type: disc;
+    }
+
+    :hover {
+        list-style: none;
+        transition: 0.1s;
+        transform: scale(1.05);
+    }
+}
