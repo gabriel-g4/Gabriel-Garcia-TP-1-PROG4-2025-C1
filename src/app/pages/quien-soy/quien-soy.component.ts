@@ -36,8 +36,6 @@ export class QuienSoyComponent implements OnInit{
 
   ngOnInit() {
     this.getGit();
-    console.log("Res")
-    console.log(this.userData.exists)
   }
 
   getGit () {
