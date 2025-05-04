@@ -13,6 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            "baseHref": "/Gabriel-Garcia-TP-1-PROG4-2025-C1/",
             "outputPath": "dist/Gabriel-Garcia-TP-1-PROG4-2025-C1",
             "index": "src/index.html",
             "browser": "src/main.ts",
