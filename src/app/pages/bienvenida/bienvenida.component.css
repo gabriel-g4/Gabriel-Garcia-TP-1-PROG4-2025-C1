@@ -1,0 +1,55 @@
+.mat-grid-list {
+    width: 75vw;
+    margin: 100px auto;
+}
+
+.mat-grid-tile {
+    border-radius: 0px;
+    background-size: 100% 100%;
+    background-position: center;
+    
+}
+.mat-grid-content {
+    position: relative;
+}
+
+.mat-grid-tile:hover {
+    
+    
+    img {
+        border-radius: 0px;
+        height: 100%;
+        width: 100%;
+        display: inline;
+    }
+
+    .titulo-juego {
+        transition: 0.5s;
+        visibility: visible;
+    }
+}
+
+img {
+    height:  calc(100% - 50px);
+    width: calc(100% - 50px);
+    border-radius: 10px;
+    transition: width 0.5s, height 0.5s;
+}
+
+h2, h3{
+    text-align: center;
+}
+
+.titulo-juego {
+    color: #fafafa;
+    font-style: italic;
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, -20%);
+    opacity: 0.8;
+    font-size: 1.25rem;
+    border-radius: 10px;
+    padding: 5px 10px;
+    visibility: hidden;
+}
