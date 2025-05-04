@@ -28,3 +28,16 @@ input[type="email"], input[type="password"] {
     padding-block: 10px;
     padding-inline: 10px;
 }
+
+.container {
+    border: 1px solid rgba(100, 100, 100, 0.125);
+    width: 25dvw;
+    margin: 0 auto;
+    box-sizing: content-box;
+    padding: 50px;
+    border-radius: 15px;
+}
+
+a {
+    text-align: center;
+}
