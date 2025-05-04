@@ -10,5 +10,5 @@ import { FooterComponent } from './layout/footer/footer.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'primer-tp';
+  title = 'Gabriel-Garcia-TP-1-PROG4-2025-C1';
 }
