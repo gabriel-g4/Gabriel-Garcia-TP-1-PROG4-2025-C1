@@ -24,7 +24,7 @@
     }
 
     .titulo-juego {
-        transition: 0.5s;
+        transition: 0.3s;
         visibility: visible;
     }
 }
@@ -33,7 +33,7 @@ img {
     height:  calc(100% - 50px);
     width: calc(100% - 50px);
     border-radius: 10px;
-    transition: width 0.5s, height 0.5s;
+    transition: width 0.3s, height 0.3s;
 }
 
 h2, h3{
