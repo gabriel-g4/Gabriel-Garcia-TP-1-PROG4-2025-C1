@@ -19,8 +19,16 @@
             <input type="checkbox" role="switch" name="switch" id="switch" (change)="changeTheme()">
 
             Cambiar tema
+
         </label>
         
+        
+        <button (click)="signOut()" [hidden]="!isLogged"> Cerrar sesion </button>
+            
+        
+        
     </ul>
+
+
     
 </nav>

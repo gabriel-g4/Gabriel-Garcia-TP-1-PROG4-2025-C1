@@ -1,24 +1,48 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { DatabaseService } from '../../services/database.service';
+import { Router } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { AuthService } from '../../services/auth.service';
 
 
 @Component({
   selector: 'app-navbar',
-  imports: [RouterLink, RouterLinkActive, FormsModule],
+  imports: [RouterLink, RouterLinkActive, FormsModule, CommonModule],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css'
 })
-export class NavbarComponent {
+export class NavbarComponent implements OnInit {
+
+  databaseService = new DatabaseService();
+  router = new Router();
+  user: any;
+  isLogged = false;
+
+  constructor(private authService: AuthService) {}
+
+    
+  
+  async ngOnInit() {
+    this.user = await this.databaseService.getUser();
+    this.authService.session$.subscribe(session => {
+        this.isLogged = !!session;
+    });
+  }
 
   changeTheme() {
 
     const html = document.documentElement;
 
-    if (html.getAttribute('data-theme') == 'dark' || (html.getAttribute('data-theme') == undefined && window.matchMedia('(prefers-color-scheme: dark)').matches)) {//== ) {
+    if (html.getAttribute('data-theme') == 'dark' || (html.getAttribute('data-theme') == undefined && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
       html.setAttribute('data-theme', 'light');
     } else {
       html.setAttribute('data-theme', 'dark');
     }
+  }
+
+  signOut () {
+    this.databaseService.signOut()
   }
 }
