@@ -1,9 +1,12 @@
 .mat-grid-list {
-    width: 75vw;
+    width: 60vw;
     margin: 100px auto;
 }
 
+
 .mat-grid-tile {
+    
+    /* background-color: var(--pico-secondary); */
     border-radius: 0px;
     background-size: 100% 100%;
     background-position: center;
@@ -11,16 +14,21 @@
 }
 .mat-grid-content {
     position: relative;
+    padding: 50px;
 }
 
 .mat-grid-tile:hover {
     
-    
+    box-shadow: 0 0 40px rgba(255, 251, 0, 0.932);
+    border-radius: 10px;
+    transition: 0.3s;
+
     img {
-        border-radius: 0px;
+        border-radius: 10px;
         height: 100%;
         width: 100%;
         display: inline;
+        
     }
 
     .titulo-juego {
@@ -30,8 +38,8 @@
 }
 
 img {
-    height:  calc(100% - 50px);
-    width: calc(100% - 50px);
+    height:  calc(100% - 25px);
+    width: calc(100% - 25px);
     border-radius: 10px;
     transition: width 0.3s, height 0.3s;
 }
@@ -41,7 +49,8 @@ h2, h3{
 }
 
 .titulo-juego {
-    color: #fafafa;
+    background-color: var(--pico-form-element-background-color);
+    color: var(--pico-contrast);
     font-style: italic;
     position: absolute;
     left: 50%;
@@ -53,3 +62,7 @@ h2, h3{
     padding: 5px 10px;
     visibility: hidden;
 }
+
+
+/*  */
+  
