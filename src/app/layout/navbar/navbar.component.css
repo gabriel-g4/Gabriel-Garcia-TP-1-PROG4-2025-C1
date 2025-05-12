@@ -1,27 +1,15 @@
-ul {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-}
-
-li {
-    position: static;
-}
 
 nav {
+    max-width: 100%;
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    height: 100px;
     background-color: var(--pico-form-element-background-color);
-}
 
-/* nav:hover {
-    background-color:var(--pico-primary-hover);
-} */
+    position: relative;
+}
 
 :where(nav li)::before {
     content: unset;
@@ -30,6 +18,63 @@ nav {
 .theme-toggle {
     margin-bottom: 0px;
     margin-left: auto;
-    margin-right: 25px;
     display: inline;
+}
+
+
+
+.left, .center, .right {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.left {
+    flex: 0;
+    margin-left: 25px;
+    justify-content: flex-start;
+}
+
+.center {
+    justify-content: center;
+    flex: 0;
+    position: absolute;
+    left: 50%;
+    max-width: calc(100% - 200px);
+    transform: translateX(-50%);
+}
+
+.right {
+    gap: 25px;
+    flex: 0;
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+.right button {
+  white-space: nowrap;
+}
+
+#login {
+    --pico-background-color: var(--pico-primary-background);
+  --pico-border-color: var(--pico-primary-border);
+  --pico-color: var(--pico-primary-inverse);
+  --pico-box-shadow: var(--pico-button-box-shadow, 0 0 0 rgba(0, 0, 0, 0));
+  padding: var(--pico-form-element-spacing-vertical) var(--pico-form-element-spacing-horizontal);
+  border: var(--pico-border-width) solid var(--pico-border-color);
+  border-radius: var(--pico-border-radius);
+  outline: none;
+  background-color: var(--pico-background-color);
+  box-shadow: var(--pico-box-shadow);
+  color: var(--pico-color);
+  font-weight: var(--pico-font-weight);
+  font-size: 1rem;
+  line-height: var(--pico-line-height);
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  transition: background-color var(--pico-transition), border-color var(--pico-transition), color var(--pico-transition), box-shadow var(--pico-transition);
 }

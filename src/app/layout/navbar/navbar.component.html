@@ -1,34 +1,21 @@
 <nav>
-    <ul>
-        <li>
-            <a routerLink="/bienvenida" routerLinkActive="active">Bienvenida</a>
-        </li>
-        <li>
-            <a routerLink="/login" routerLinkActive="active">Login</a>
-        </li>
-        <li>
-            <a routerLink="/registro" routerLinkActive="active">Registro</a>
-        </li>
-        <li>
-            <a routerLink="/quien-soy" routerLinkActive="active">Quien soy</a>
-        </li>
-
-        
+    <div class="left">
         <label for="switch" class="theme-toggle">
-            
             <input type="checkbox" role="switch" name="switch" id="switch" (change)="changeTheme()">
-
-            Cambiar tema
-
         </label>
+    </div>
+
+    <div class="center">
+        <a routerLink="/bienvenida" routerLinkActive="active">Bienvenida</a>
+
+        <a routerLink="/quien-soy" routerLinkActive="active">Quien soy</a>
+    </div>
         
+    <div class="right">
+        
+        <a id="login" routerLink="/login" routerLinkActive="active" [hidden]="isLogged">Login</a>
         
         <button (click)="signOut()" [hidden]="!isLogged"> Cerrar sesion </button>
-            
-        
-        
-    </ul>
+    </div>
 
-
-    
 </nav>
