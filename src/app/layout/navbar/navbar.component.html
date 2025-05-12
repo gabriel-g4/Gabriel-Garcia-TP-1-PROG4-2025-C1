@@ -14,6 +14,8 @@
     <div class="right">
         
         <a id="login" routerLink="/login" routerLinkActive="active" [hidden]="isLogged">Login</a>
+
+        <a id="registrarse" routerLink="/registro" routerLinkActive="active" [hidden]="isLogged">Registrarse</a>
         
         <button (click)="signOut()" [hidden]="!isLogged"> Cerrar sesion </button>
     </div>

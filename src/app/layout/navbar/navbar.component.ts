@@ -44,5 +44,6 @@ export class NavbarComponent implements OnInit {
 
   signOut () {
     this.databaseService.signOut()
+    this.router.navigate(['/bienvenida'])
   }
 }
