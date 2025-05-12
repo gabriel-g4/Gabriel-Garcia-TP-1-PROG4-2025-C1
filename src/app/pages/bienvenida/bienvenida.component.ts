@@ -19,9 +19,9 @@ export class BienvenidaComponent {
 
 
   tiles: Tile[] = [
-    {text: 'Ahorcado', color: 'lightblue', img_url: '/juegoahorcado.png', url: '/ahorcado'},
-    {text: 'Mayor-menor', color: 'lightgreen', img_url: "/juegomayoromenor.jpg", url: '/mayor-menor'},
-    {text: 'Preguntados', color: 'lightpink', img_url: "/juegopreguntados.png", url: '/preguntados'},
+    {text: 'Ahorcado', color: 'lightblue', img_url: '/juegoahorcado1.png', url: '/ahorcado'},
+    {text: 'Mayor-menor', color: 'lightgreen', img_url: "/juegomayormenor1.png", url: '/mayor-menor'},
+    {text: 'Preguntados', color: 'lightpink', img_url: "/juegopreguntados1.png", url: '/preguntados'},
     {text: 'Juego propio', color: '#DDBDF1', img_url: "/juegopropio.jpg", url: ''},
   ];
 

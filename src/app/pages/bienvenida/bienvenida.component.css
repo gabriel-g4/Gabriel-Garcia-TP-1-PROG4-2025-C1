@@ -19,9 +19,9 @@
 
 .mat-grid-tile:hover {
     
-    box-shadow: 0 0 40px rgba(255, 251, 0, 0.932);
+    box-shadow: 0 0 40px rgba(255, 255, 255, 1);
     border-radius: 10px;
-    transition: 0.3s;
+    transition: 0.1s;
 
     img {
         border-radius: 10px;
@@ -32,8 +32,8 @@
     }
 
     .titulo-juego {
-        transition: 0.3s;
-        visibility: visible;
+        transition: 0.1s;
+        visibility: hidden;
     }
 }
 
@@ -41,7 +41,7 @@ img {
     height:  calc(100% - 25px);
     width: calc(100% - 25px);
     border-radius: 10px;
-    transition: width 0.3s, height 0.3s;
+    transition: width 0.1s, height 0.1s;
 }
 
 h2, h3{
