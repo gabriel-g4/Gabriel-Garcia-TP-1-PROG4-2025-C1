@@ -10,8 +10,8 @@ export class DatabaseService {
       }).then(({data, error}) => {
         if (error) {
           console.error("Error: ", error.message);
-          success = false;
         } else {
+          console.log(data)
           alert("registro exitoso")
           success = true;
         }
@@ -20,15 +20,28 @@ export class DatabaseService {
       return success;
     }
     
-   login (email: string, password: string) {
+   login (email: string, password: string): boolean {
+      let success = false;
       supabase.auth.signInWithPassword({
           email: email,
           password: password
       }).then(({data, error})=>{
+          console.log(data)
           if (error) {
               console.error("Error: ", error.message)
           } else {
-              alert("Login exitoso")
+              success = true;
           }
-      })}
+      })
+      return success
+    }
+
+    getUser () {
+      return supabase.auth.getUser()
+    }
+
+    signOut() {
+      supabase.auth.signOut();
+    }
+
 }
