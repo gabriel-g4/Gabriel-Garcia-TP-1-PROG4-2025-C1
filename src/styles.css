@@ -1,12 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    --fondo-blanco: rgb(236,232.5,224.5);
+}
 
+html, body { 
+    min-height: 100dvh; 
+    width: 100vw;
+    overflow-x: hidden;
+}
+body { 
+    margin: 0; 
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    background-image: linear-gradient(to bottom, var(--pico-primary), rgba(255, 255, 255, 0.1)), url('assets/images/background.jpg');
+    background-size: auto;
+    background-repeat: repeat repeat;
+    background-attachment: fixed;
+    min-height: 100dvh;
+}
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+p {
+    margin-bottom: 0px;
+}
 
 footer {
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 0px;
     align-items: center;
     text-align: center;
 }
