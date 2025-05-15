@@ -1,10 +1,20 @@
-import supabase from "./supabase.service";
+import { Injectable } from "@angular/core";
+import { SupabaseService } from "./supabase.service";
+
+
+@Injectable({
+  providedIn: 'root',
+})
 
 export class DatabaseService {
 
+
+
+  constructor(private supabase: SupabaseService) {}
+
     register(email: string, password: string): boolean {
       let success = false;
-      supabase.auth.signUp({
+      this.supabase.getClient().auth.signUp({
         email: email,
         password: password
       }).then(({data, error}) => {
@@ -22,7 +32,7 @@ export class DatabaseService {
     
    login (email: string, password: string): boolean {
       let success = false;
-      supabase.auth.signInWithPassword({
+      this.supabase.getClient().auth.signInWithPassword({
           email: email,
           password: password
       }).then(({data, error})=>{
@@ -37,11 +47,11 @@ export class DatabaseService {
     }
 
     getUser () {
-      return supabase.auth.getUser()
+      return this.supabase.getClient().auth.getUser()
     }
 
     signOut() {
-      supabase.auth.signOut();
+      this.supabase.getClient().auth.signOut();
     }
 
 }
