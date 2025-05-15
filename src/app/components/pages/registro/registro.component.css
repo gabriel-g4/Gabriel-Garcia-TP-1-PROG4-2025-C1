@@ -1,6 +1,8 @@
 form {
     display: flex;
     flex-direction: column;
+    width: 25dvw;
+    margin: 0 auto;
     gap: 10px;
 }
 
@@ -14,7 +16,7 @@ h2 {
 }
 
 input[type="submit"] {
-    width: 50%;
+    width: 33%;
     align-self: center;
 }
 
@@ -28,14 +30,23 @@ input[type="email"], input[type="password"] {
 }
 
 .container {
-    border: 1px solid rgba(100, 100, 100, 0.125);
+    background-color: var(--pico-background-color);
+    /* border: 1px solid rgba(100, 100, 100, 0.125); */
+    border: 5px solid var(--pico-primary-border);
     width: 25dvw;
-    margin: 0 auto;
+    margin: 50px auto;
     box-sizing: content-box;
     padding: 50px;
     border-radius: 15px;
+     
+    
 }
 
+.container:hover {
+    
+    border: 5px solid var(--pico-primary-hover);
+    
+}
 a {
     text-align: center;
 }

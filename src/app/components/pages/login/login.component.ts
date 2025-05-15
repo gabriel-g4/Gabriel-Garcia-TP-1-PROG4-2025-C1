@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
-import { DatabaseService } from '../../services/database.service';
-import { RouterLink, RouterLinkActive } from '@angular/router';
+import { DatabaseService } from '../../../services/database.service';
+import { RouterLink, RouterLinkActive, Router, Data } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -11,8 +11,7 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 })
 export class LoginComponent {
 
-  msg: string = ""
-  databaseService = new DatabaseService();
+  constructor(private databaseService: DatabaseService, private router: Router) {}
 
   loginForm = new FormGroup({
     email: new FormControl('', [Validators.required, Validators.email]),
@@ -22,16 +21,16 @@ export class LoginComponent {
   onSubmit(){
 
     if (this.loginForm.valid){
-      this.msg = "valido"
       
       try {
         this.databaseService.login(this.loginForm.value.email || "", this.loginForm.value.password || "")
+        this.router.navigate(["/bienvenida"])
       } catch (error){
         console.log("Entro al catch")
         console.error("eeerror", error)
       }
     } else {
-      this.msg = "invalido"
+      
     }
   }
 }

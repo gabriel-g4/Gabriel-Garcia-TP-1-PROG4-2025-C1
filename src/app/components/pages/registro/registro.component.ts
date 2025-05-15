@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ReactiveFormsModule, FormControl, FormGroup, Validators, AbstractControl, ValidationErrors, ValidatorFn } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import { DatabaseService } from '../../services/database.service';
-import { RouterLink, RouterLinkActive } from '@angular/router';
+import { DatabaseService } from '../../../services/database.service';
+import { Data, RouterLink, RouterLinkActive } from '@angular/router';
 
 export const ValidatorRepeatedPassword = (password: FormControl): ValidatorFn => {
   return (control: AbstractControl): ValidationErrors | null => {
@@ -21,7 +21,7 @@ export const ValidatorRepeatedPassword = (password: FormControl): ValidatorFn =>
 
 export class RegistroComponent implements OnInit{
 
-  supabaseService = new DatabaseService();
+  constructor(private databaseService: DatabaseService) {}
 
   registroForm = new FormGroup({
     email: new FormControl('', [Validators.required, Validators.email]),
@@ -35,17 +35,16 @@ export class RegistroComponent implements OnInit{
   ngOnInit(): void {
     this.registroForm.controls.repeatPassword.addValidators(ValidatorRepeatedPassword(this.registroForm.controls.password))
     this.registroForm.controls.repeatPassword.updateValueAndValidity();
+
+    console.log(this.databaseService.getUser())
   }
   
   onSubmit(){
 
     if(this.registroForm.valid){
-      console.log("valido")
-
-      console.log(this.registroForm.value.email)
 
       try {
-        if (this.supabaseService.register(this.registroForm.value.email || "", this.registroForm.value.password || "")){
+        if (this.databaseService.register(this.registroForm.value.email || "", this.registroForm.value.password || "")){
   
         } else {
   

@@ -1,0 +1,28 @@
+<div class="bienvenida">
+
+  <!-- <h2>
+    Bienvenido/a!
+  </h2>
+  
+  <section>
+    <h3>Mi sala de juegos</h3>
+  
+  </section> -->
+  
+  <mat-grid-list cols="2" rowHeight="2:1.5" gutterSize="0px">
+    @for (tile of tiles; track tile) {
+      <a routerLink="{{tile.url}}" routerLinkActive="active">
+        <mat-grid-tile class="holographic-card">
+          <img [src]="tile.img_url" [alt]="tile.text">
+          <span class="titulo-juego">
+            {{tile.text}}
+          </span>
+        </mat-grid-tile>
+      </a>
+    }
+  </mat-grid-list>
+
+  <app-chat/>
+  
+  <p>! Officia laborum molestiae deserunt molestias iste reprehenderit nulla numquam quod earum nobis exercitationem, doloremque hic! Fugit consectetur maiores sint neque autem laboriosam iusto quos magni ipsam quasi quisquam maxime mollitia vitae illo itaque veniam, in perspiciatis ad. Sunt magni quis laborum reprehenderit distinctio repudiandae animi culpa unde. Distinctio, enim obcaecati ipsa ratione vero vitae dolore ipsum ex odit laudantium dolores nisi beatae expedita ullam natus non at corporis magni voluptate quia! Recusandae deleniti incidunt ipsa atque cupiditate esse rem unde iusto doloremque quasi odit repudiandae architecto quisquam nobis veniam non explicabo sed, dignissimos, minima itaque, enim est voluptas animi! Facere odio aspernatur sit incidunt recusandae, doloribus saepe placeat voluptatibus fuga! Deserunt quia ab consequatur quas neque voluptatibus eaque ipsum vitae sequi quae, nesciunt sunt saepe odit nisi necessitatibus velit illum nobis totam labore iure. Unde libero eos cupiditate quisquam sed necessitatibus totam reiciendis, quam minima vero. Culpa quam, impedit temporibus error quibusdam commodi placeat qui incidunt exercitationem laboriosam quod cupiditate fugiat officiis ipsum iste asperiores corporis et deleniti animi tempora, debitis in voluptatibus ullam. Qui, vel suscipit necessitatibus provident dignissimos laudantium ea ipsa neque distinctio molestiae possimus quae veniam deserunt odit, eos perferendis veritatis ipsam corporis numquam alias totam eum ullam? Itaque nihil animi possimus ad fugit eligendi debitis, reprehenderit id rem molestiae corrupti unde aliquam aut!</p>
+</div>

@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { FormsModule } from '@angular/forms';
-import { DatabaseService } from '../../services/database.service';
+import { DatabaseService } from '../../../services/database.service';
 import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { AuthService } from '../../services/auth.service';
+import { AuthService } from '../../../services/auth.service';
 
 
 @Component({
@@ -15,12 +15,13 @@ import { AuthService } from '../../services/auth.service';
 })
 export class NavbarComponent implements OnInit {
 
-  databaseService = new DatabaseService();
-  router = new Router();
   user: any;
   isLogged = false;
 
-  constructor(private authService: AuthService) {}
+  constructor(private authService: AuthService, 
+    private databaseService: DatabaseService,
+    private router: Router
+  ) {}
 
     
   

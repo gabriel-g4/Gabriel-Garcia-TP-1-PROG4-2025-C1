@@ -18,7 +18,8 @@ img:hover{
 }
 
 .github-card {
-    margin: 0 auto;
+    background-color: var(--pico-background-color);
+    margin: 50px auto;
     padding: 20px;
     width: 50vw;
     border-radius: 50px;

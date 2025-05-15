@@ -1,7 +1,7 @@
 
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { GithubService } from '../../services/github.service';
+import { GithubService } from '../../../services/github.service';
 
 interface GithubUser {
   avatarUrl: string,

@@ -1,0 +1,33 @@
+<section class="chat">
+    <div class="titulo">
+        <h5> Chat global </h5>
+    </div>
+    <div class="display">
+        <div class="messages">
+            <div *ngFor="let msg of (messages$ | async)">
+                <div class="message" [attr.style]="msg.email == user.email ? 'margin-left: auto;' : ''">
+                    <p class="text" [attr.style]="msg.email == user.email ? 'background-color: aliceblue;' : ''"> {{ msg.mensaje }} </p>
+                    <p class="metadata">
+                        <strong class="email"> {{ msg.email || "sin email" }} </strong>  
+                        <span class="date">{{ msg.created_at | date:'HH:mm:ss dd/MM/yyyy' }}</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="caja">
+        <input
+            name="message"
+            type="text"
+            maxlength="450"
+            [(ngModel)]="message"
+            (keydown.enter)="send()"
+            placeholder="Escribir aqui..."
+        />
+        <input type="submit" (click)="send()"/>
+    </div>
+</section>
+
+  
+  
+

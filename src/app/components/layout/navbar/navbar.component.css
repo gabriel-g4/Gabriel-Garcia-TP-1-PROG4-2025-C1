@@ -6,10 +6,12 @@ nav {
     justify-content: space-between;
     align-items: center;
     height: 100px;
-    background-color: var(--pico-form-element-background-color);
+    background-color: var(--pico-form-element-background-color); 
 
     position: relative;
+    border-bottom: 5px solid var(--pico-primary-border)
 }
+
 
 :where(nav li)::before {
     content: unset;

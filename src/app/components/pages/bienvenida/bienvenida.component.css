@@ -1,6 +1,7 @@
 .mat-grid-list {
     width: 60vw;
     margin: 100px auto;
+    padding-bottom: 1000px !important;
 }
 
 
@@ -10,6 +11,7 @@
     border-radius: 0px;
     background-size: 100% 100%;
     background-position: center;
+    
     
 }
 .mat-grid-content {
@@ -38,6 +40,7 @@
 }
 
 img {
+    /* border: 5px solid var(--pico-primary-border); */
     height:  calc(100% - 25px);
     width: calc(100% - 25px);
     border-radius: 10px;
@@ -50,6 +53,7 @@ h2, h3{
 
 .titulo-juego {
     background-color: var(--pico-form-element-background-color);
+    
     color: var(--pico-contrast);
     font-style: italic;
     position: absolute;
