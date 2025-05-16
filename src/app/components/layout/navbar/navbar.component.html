@@ -9,6 +9,8 @@
         <a routerLink="/bienvenida" routerLinkActive="active">Bienvenida</a>
 
         <a routerLink="/quien-soy" routerLinkActive="active">Quien soy</a>
+
+        <a routerLink="/chat" routerLinkActive="active" [hidden]="!isLogged">Chat</a>
     </div>
         
     <div class="right">

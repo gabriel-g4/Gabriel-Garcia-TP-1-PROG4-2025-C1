@@ -7,7 +7,7 @@
 }
 
 .titulo {
-    background-color: aliceblue;
+    background-color: var(--pico-form-element-background-color);
     padding: 5px;
     text-align: center;
     
@@ -17,7 +17,7 @@
 }
 
 .display {
-    background-color: white;
+    background-color: var(--pico-form-element-background-color);
     width: 100%;
     height: 80%;
     margin: 0 auto;
@@ -35,7 +35,6 @@ input[type="submit"] {
 
 .messages {
     color: black;
-    
 }
 
 .message {
@@ -45,6 +44,7 @@ input[type="submit"] {
 }
 
 .text {
+    color: black;
     border-radius: 5px;
     background-color: greenyellow;
     padding: 15px;

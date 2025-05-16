@@ -12,6 +12,11 @@ export const routes: Routes = [
         path: "bienvenida", 
         loadComponent: ()=> import('./components/pages/bienvenida/bienvenida.component').then(c => c.BienvenidaComponent)
     },
+    {
+        path: "chat",
+        loadComponent: ()=> import('../app/components/chat/chat.component').then(c => c.ChatComponent),
+        canActivate: [authGuard]
+    },
     { 
         path: "login", 
         loadComponent: ()=> import('./components/pages/login/login.component').then(c => c.LoginComponent),
