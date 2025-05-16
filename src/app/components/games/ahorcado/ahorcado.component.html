@@ -1,1 +1,32 @@
-<p>ahorcado works!</p>
+<section class="ahorcado">
+  <h1>Ahorcado</h1>
+
+  <section class="principal"> 
+    <img [src]="imagen_url" alt="progreso del juego">
+    <div class="datos">
+        <div *ngIf="isWinner" class="color">🎉 ¡Ganaste! Puntaje: {{ score }} </div>
+        <div *ngIf="!isWinner && isGameOver">😢 <span class="error">Perdiste.</span> La palabra era: {{ word }}</div>
+        <p>Palabra: {{ displayWord.join(' ') }}</p>
+        @if (wrongLetters.length > 0) {
+          <p>Letras erróneas: <span class="error">{{ wrongLetters.join(', ') }}</span></p>
+        }
+        <p>Errores: {{ wrongGuesses }} / {{ maxGuesses }}</p>
+    </div>
+  </section>
+
+  <div *ngIf="!isGameOver" class="teclado">
+  
+    <button *ngFor="let letter of alphabet" 
+            (click)="guess(letter)" 
+            [disabled]="guessedLetters.includes(letter)">
+              {{ letter }}
+    </button>
+
+  </div>
+
+  <div class="score color"> Puntaje: {{ score }}</div>
+
+  <button (click)="resetGame()"> Reiniciar juego </button>
+
+</section>
+

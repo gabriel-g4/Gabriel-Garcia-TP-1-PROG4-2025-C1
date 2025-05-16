@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { RouterLink, RouterLinkActive } from '@angular/router';
-import { ChatComponent } from "../../chat/chat.component";
 
 export interface Tile {
   text: string;
@@ -11,7 +10,7 @@ export interface Tile {
 
 @Component({
   selector: 'app-bienvenida',
-  imports: [MatGridListModule, RouterLink, RouterLinkActive, ChatComponent],
+  imports: [MatGridListModule, RouterLink, RouterLinkActive],
   templateUrl: './bienvenida.component.html',
   styleUrl: './bienvenida.component.css'
 })

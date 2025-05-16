@@ -1,0 +1,43 @@
+button {
+  margin: 2px;
+  padding: 5px 10px;
+}
+
+.datos {
+    margin: 25px;
+    font-size: 1.5rem;
+}
+
+.teclado {
+    width: 40%;
+    margin: 25px auto;
+    background-color: var(--pico-contrast);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.ahorcado {
+  padding: 25px;
+  border-radius: 10px;
+  width: 50vw;
+  margin: 50px auto;
+  background-color: var(--pico-background-color);
+  text-align: center;
+}
+
+h1 {
+  margin: 25px;
+}
+
+.score {
+  text-align: right;
+
+}
+
+.error {
+  color: red;
+}
+
+.color {
+  color: var(--pico-primary);
+}
