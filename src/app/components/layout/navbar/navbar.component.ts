@@ -16,7 +16,9 @@ import { AuthService } from '../../../services/auth.service';
 export class NavbarComponent implements OnInit {
 
   user: any;
+  response: any
   isLogged = false;
+  email = ''
 
   constructor(private authService: AuthService, 
     private databaseService: DatabaseService,
@@ -26,9 +28,18 @@ export class NavbarComponent implements OnInit {
     
   
   async ngOnInit() {
-    this.user = await this.databaseService.getUser();
-    this.authService.session$.subscribe(session => {
-        this.isLogged = !!session;
+    this.response = await this.databaseService.getUser();
+    
+    this.authService.session$.subscribe(async session => {
+      this.isLogged = !!session;
+
+      if (session) {
+        this.user = (await this.databaseService.getUser()).data.user;
+        this.email = this.user?.email ?? '';
+      } else {
+        this.user = null;
+        this.email = '';
+      }
     });
   }
 
