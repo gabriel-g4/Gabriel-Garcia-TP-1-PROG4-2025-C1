@@ -1,0 +1,73 @@
+
+
+
+<select [(ngModel)]="juegoSeleccionado" (change)="cargarResultados()">
+  <option *ngFor="let juego of juegos" [value]="juego">{{ juego }}</option>
+</select>
+
+<div class="tabs">
+  <button 
+    [class.active]="activeTab === 1" 
+    (click)="setActiveTab(1)">
+    Resultados personales
+  </button>
+
+  <button 
+    [class.active]="activeTab === 2" 
+    (click)="setActiveTab(2)">
+    Top de jugadores
+  </button>
+</div>
+
+<div class="content" [hidden]="activeTab !== 1">
+    @if(resultados.length > 0) {
+        <table class="resultados">
+            <thead>
+                <tr>
+                    @for (columna of columnas ; track columna) {  
+                        <th>{{columna}}</th> 
+                    }
+                    
+                </tr>
+            </thead>
+            <tbody>
+                @for (resultado of resultados| keyvalue; track resultado.key) {
+                    <tr>
+                        @for (par of resultado.value | keyvalue; track $index;) {
+                            <td> {{resultado.value[columnas[$index]]}}</td>
+                        }
+                    </tr>
+                    }
+            </tbody>
+        </table>
+    } @else {
+        <h2 class="empty">Sin resultados para el jugador.</h2>
+    } 
+</div>
+
+<div class="content" [hidden]="activeTab !== 2">
+    <table class="top" *ngIf="top.length > 0">
+        <thead>
+            <tr>
+                @for (columna of columnas ; track columna) {  
+                    <th>{{columna}}</th> 
+                }
+            </tr>
+        </thead>
+        <tbody>
+            @for (resultado of top| keyvalue; track resultado.key) {
+                <tr>
+                    @for (par of resultado.value | keyvalue; track $index;) {
+                        <td> {{resultado.value[columnas[$index]]}}</td>
+                    }
+                </tr>
+                }
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+

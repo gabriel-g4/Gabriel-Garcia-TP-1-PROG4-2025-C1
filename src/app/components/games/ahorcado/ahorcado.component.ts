@@ -2,12 +2,12 @@ import { CommonModule } from '@angular/common';
 import { Component, HostListener, OnInit } from '@angular/core';
 import { SupabaseService } from '../../../services/supabase.service';
 import { AuthService } from '../../../services/auth.service';
-
+import { RouterLink, RouterLinkActive } from '@angular/router';
 
 
 @Component({
   selector: 'app-ahorcado',
-  imports: [CommonModule],
+  imports: [CommonModule, RouterLink, RouterLinkActive],
   templateUrl: './ahorcado.component.html',
   styleUrls: ['./ahorcado.component.css']
 })
