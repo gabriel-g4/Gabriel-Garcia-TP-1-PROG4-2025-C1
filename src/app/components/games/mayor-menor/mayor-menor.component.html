@@ -1,1 +1,35 @@
-<p>mayor-menor works!</p>
+<section class="mayor-menor">
+    <h2> ¿Mayor o menor? </h2>
+    <p> Adivina si la siguiente carta es mayor o menor a la actual.</p>
+    <small> (las cartas del mismo número se toman como comodines.)</small>
+    
+    <div class="game-over" *ngIf="gameOver"> 
+        <h2> Terminó el juego! </h2>
+    </div>
+    <div class="datos">
+        <b> Puntuacion: {{ score }}</b>
+        <b> Racha: {{ streak }}</b>
+    </div>
+    <div class="game-over" *ngIf="gameOver">
+        <p> La carta era: </p>
+        <img class="carta" [src]="cartaOculta.imagen_url" [alt]="cartaOculta.valor">
+        <button class="reiniciar" (click)="reiniciarJuego()"> Jugar de nuevo </button>
+    </div>
+
+
+    <div class="cartas" *ngIf="!gameOver"> 
+        <img class="carta" [src]="cartaActual.imagen_url" [alt]="cartaActual.valor">
+        <img class="carta" src="assets/images/cartas/oculta.png" alt="carta secreta" >
+    </div>
+
+    <div class="botones" *ngIf="!gameOver">
+        <button (click)="mayor()"> Mayor </button>
+        <button (click)="menor()"> Menor </button>
+    </div>
+
+    <div class="botones-inferiores">
+        
+        <a routerLink="/resultados" routerLinkActive="active" id="resultados"> Resultados </a>
+    </div>
+
+</section>

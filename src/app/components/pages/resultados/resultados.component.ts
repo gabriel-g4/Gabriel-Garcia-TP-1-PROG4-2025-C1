@@ -47,11 +47,15 @@ export class ResultadosComponent implements OnInit {
     this.userId = session?.user?.id ?? null;
     if (this.userId) {
       this.cargarResultados();
-      this.cargarTop();
     }
   }
 
-  async cargarResultados() {
+  async cargarResultados(){
+    this.cargarResultadosPropios();
+    this.cargarTop();
+  }
+
+  async cargarResultadosPropios() {
     if (!this.userId) return;
 
     const tabla = this.juegoSeleccionado;
