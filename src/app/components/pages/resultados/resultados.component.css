@@ -18,9 +18,14 @@ table {
 
 th, td {
     white-space: nowrap;
-    text-overflow: ellipsis;
+    text-overflow: clip;
     overflow: hidden;
     max-width: 270px;
+}
+
+td:hover {
+  text-overflow: clip;
+  overflow: auto;
 }
 
 select {

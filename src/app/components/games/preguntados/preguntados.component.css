@@ -1,0 +1,96 @@
+.preguntados {
+    padding: 25px;
+    border-radius: 10px;
+    width: 50vw;
+    margin: 50px auto;
+    background-color: var(--pico-background-color);
+    text-align: center;
+}
+
+.pregunta {
+    margin: 20px;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+ul {
+    text-align: left;
+    margin: 15px;
+    list-style: none;
+    padding: 0;
+
+    li {
+        margin: 10px;
+        list-style: none;
+    }
+}
+
+ul button {
+    width: 100%;
+    text-align: left;
+}
+
+.correcta {
+    background-color: green;
+    opacity: 1;
+}
+
+.incorrecta {
+    background-color: red;
+    opacity: 1;
+}
+
+.verde {
+    color: green;
+}
+
+.rojo {
+    color: red;
+}
+
+h3 {
+    margin-top: 0;
+}
+
+.puntos {
+    font-style: italic;
+    color: var(--pico-primary);
+    margin: 25px;
+}
+
+#resultados {
+  --pico-background-color: var(--pico-primary-background);
+  --pico-border-color: var(--pico-primary-border);
+  --pico-color: var(--pico-primary-inverse);
+  --pico-box-shadow: var(--pico-button-box-shadow, 0 0 0 rgba(0, 0, 0, 0));
+  padding: var(--pico-form-element-spacing-vertical) var(--pico-form-element-spacing-horizontal);
+  border: var(--pico-border-width) solid var(--pico-border-color);
+  border-radius: var(--pico-border-radius);
+  outline: none;
+  background-color: var(--pico-background-color);
+  box-shadow: var(--pico-box-shadow);
+  color: var(--pico-color);
+  font-weight: var(--pico-font-weight);
+  font-size: 1rem;
+  line-height: var(--pico-line-height);
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  transition: background-color var(--pico-transition), border-color var(--pico-transition), color var(--pico-transition), box-shadow var(--pico-transition);
+}
+
+
+.container-resultados {
+    text-align: right;
+}
+
+.game-over {
+    margin: 0 auto;
+    width: fit-content;
+    display: flex;
+    gap: 25px;
+    flex-direction: row;
+}
