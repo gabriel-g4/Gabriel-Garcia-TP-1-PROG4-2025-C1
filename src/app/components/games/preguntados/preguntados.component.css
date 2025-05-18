@@ -10,6 +10,9 @@
 .pregunta {
     margin: 20px;
     font-size: 1.5rem;
+}
+
+.italic {
     font-style: italic;
 }
 

@@ -22,7 +22,7 @@ export class PreguntadosComponent {
   esCorrecta: boolean = false;
   score: number = 0;
   contadorCorrectas : number = 0;
-  topePreguntas: number = 3;
+  topePreguntas: number = 10;
   gameOver: boolean = false;
 
   constructor(private preguntasService: PreguntasService, 

@@ -1,702 +1,703 @@
 [
   {
     "id": 1,
-    "pregunta": "¿Cuál es la capital de Argentina?",
-    "categoria": { "nombre": "Geografía" },
-    "opciones": ["Buenos Aires", "Santiago", "Montevideo", "Lima"],
-    "respuestaCorrecta": "Buenos Aires"
-  },
-  {
-    "id": 2,
-    "pregunta": "¿Qué framework estamos utilizando?",
-    "categoria": { "nombre": "Programación" },
-    "opciones": ["Angular", "React", "Vue", "Svelte"],
-    "respuestaCorrecta": "Angular"
-  },
-  {
-    "id": 3,
-    "pregunta": "¿Cuál es el océano más grande del mundo?",
-    "categoria": { "nombre": "Geografía" },
-    "opciones": ["Pacífico", "Atlántico", "Índico", "Ártico"],
-    "respuestaCorrecta": "Pacífico"
-  },
-  {
-    "id": 4,
-    "pregunta": "¿En qué año se fundó Google?",
-    "categoria": { "nombre": "Tecnología" },
-    "opciones": ["1998", "1996", "2000", "2002"],
-    "respuestaCorrecta": "1998"
-  },
-  {
-    "id": 5,
-    "pregunta": "¿Cuál es el elemento químico más abundante en la Tierra?",
-    "categoria": { "nombre": "Ciencia" },
-    "opciones": ["Oxígeno", "Silicio", "Hierro", "Aluminio"],
-    "respuestaCorrecta": "Oxígeno"
-  },
-  {
-    "id": 6,
-    "pregunta": "¿Qué país tiene la mayor población del mundo?",
-    "categoria": { "nombre": "Geografía" },
-    "opciones": ["China", "India", "Estados Unidos", "Indonesia"],
-    "respuestaCorrecta": "India"
-  },
-  {
-    "id": 7,
-    "pregunta": "¿Cuál es el lenguaje de programación más utilizado?",
-    "categoria": { "nombre": "Programación" },
-    "opciones": ["JavaScript", "Python", "Java", "C++"],
-    "respuestaCorrecta": "JavaScript"
-  },
-  {
-    "id": 8,
     "pregunta": "¿Cuál es el planeta más grande del sistema solar?",
     "categoria": { "nombre": "Astronomía" },
-    "opciones": ["Júpiter", "Saturno", "Neptuno", "Urano"],
+    "opciones": ["Saturno", "Júpiter", "Neptuno", "Urano"],
     "respuestaCorrecta": "Júpiter"
   },
   {
+    "id": 2,
+    "pregunta": "¿Quién pintó 'La noche estrellada'?",
+    "categoria": { "nombre": "Arte" },
+    "opciones": ["Claude Monet", "Vincent van Gogh", "Pablo Picasso", "Salvador Dalí"],
+    "respuestaCorrecta": "Vincent van Gogh"
+  },
+  {
+    "id": 3,
+    "pregunta": "¿Cuál es la capital de Canadá?",
+    "categoria": { "nombre": "Geografía" },
+    "opciones": ["Toronto", "Vancouver", "Ottawa", "Montreal"],
+    "respuestaCorrecta": "Ottawa"
+  },
+  {
+    "id": 4,
+    "pregunta": "¿Qué gas es más abundante en la atmósfera terrestre?",
+    "categoria": { "nombre": "Ciencia" },
+    "opciones": ["Oxígeno", "Nitrógeno", "Dióxido de carbono", "Argón"],
+    "respuestaCorrecta": "Nitrógeno"
+  },
+  {
+    "id": 5,
+    "pregunta": "¿En qué año llegó el hombre a la Luna?",
+    "categoria": { "nombre": "Historia" },
+    "opciones": ["1965", "1969", "1972", "1959"],
+    "respuestaCorrecta": "1969"
+  },
+  {
+    "id": 6,
+    "pregunta": "¿Cuál es el idioma oficial de Egipto?",
+    "categoria": { "nombre": "Idiomas" },
+    "opciones": ["Árabe", "Hebreo", "Inglés", "Francés"],
+    "respuestaCorrecta": "Árabe"
+  },
+  {
+    "id": 7,
+    "pregunta": "¿Qué instrumento se usa para medir la presión atmosférica?",
+    "categoria": { "nombre": "Ciencia" },
+    "opciones": ["Barómetro", "Termómetro", "Altímetro", "Anemómetro"],
+    "respuestaCorrecta": "Barómetro"
+  },
+  {
+    "id": 8,
+    "pregunta": "¿Quién escribió 'Romeo y Julieta'?",
+    "categoria": { "nombre": "Literatura" },
+    "opciones": ["Miguel de Cervantes", "William Shakespeare", "Gabriel García Márquez", "Oscar Wilde"],
+    "respuestaCorrecta": "William Shakespeare"
+  },
+  {
     "id": 9,
-    "pregunta": "¿En qué año se lanzó el primer iPhone?",
-    "categoria": { "nombre": "Tecnología" },
-    "opciones": ["2007", "2005", "2009", "2010"],
-    "respuestaCorrecta": "2007"
+    "pregunta": "¿Cuál es el metal más pesado?",
+    "categoria": { "nombre": "Ciencia" },
+    "opciones": ["Oro", "Plomo", "Mercurio", "Uranio"],
+    "respuestaCorrecta": "Osmio"
   },
   {
     "id": 10,
-    "pregunta": "¿Cuál es el animal terrestre más rápido?",
-    "categoria": { "nombre": "Biología" },
-    "opciones": ["Guepardo", "León", "Gacela", "Águila"],
-    "respuestaCorrecta": "Guepardo"
+    "pregunta": "¿En qué continente se encuentra el desierto del Sahara?",
+    "categoria": { "nombre": "Geografía" },
+    "opciones": ["Asia", "África", "América", "Oceanía"],
+    "respuestaCorrecta": "África"
   },
   {
     "id": 11,
-    "pregunta": "¿Cuál es la capital de Japón?",
-    "categoria": { "nombre": "Geografía" },
-    "opciones": ["Tokio", "Pekín", "Seúl", "Bangkok"],
-    "respuestaCorrecta": "Tokio"
+    "pregunta": "¿Cuál es la fórmula química del agua?",
+    "categoria": { "nombre": "Ciencia" },
+    "opciones": ["H2O", "CO2", "O2", "NaCl"],
+    "respuestaCorrecta": "H2O"
   },
   {
     "id": 12,
-    "pregunta": "¿Qué significa HTML?",
-    "categoria": { "nombre": "Programación" },
-    "opciones": ["HyperText Markup Language", "High Tech Modern Language", "Hyperlink Text Management Layer", "Home Tool Markup Language"],
-    "respuestaCorrecta": "HyperText Markup Language"
-  },
-  {
-    "id": 13,
-    "pregunta": "¿Cuál es el hueso más largo del cuerpo humano?",
-    "categoria": { "nombre": "Ciencia" },
-    "opciones": ["Fémur", "Húmero", "Tibia", "Columna vertebral"],
-    "respuestaCorrecta": "Fémur"
-  },
-  {
-    "id": 14,
-    "pregunta": "¿En qué año terminó la Segunda Guerra Mundial?",
-    "categoria": { "nombre": "Historia" },
-    "opciones": ["1945", "1944", "1946", "1943"],
-    "respuestaCorrecta": "1945"
-  },
-  {
-    "id": 15,
-    "pregunta": "¿Qué país ganó el Mundial de Fútbol 2022?",
-    "categoria": { "nombre": "Deportes" },
-    "opciones": ["Argentina", "Francia", "Brasil", "Alemania"],
-    "respuestaCorrecta": "Argentina"
-  },
-  {
-    "id": 16,
-    "pregunta": "¿Cuál es la moneda de Japón?",
-    "categoria": { "nombre": "Economía" },
-    "opciones": ["Yen", "Won", "Dólar", "Yuan"],
-    "respuestaCorrecta": "Yen"
-  },
-  {
-    "id": 17,
-    "pregunta": "¿Quién pintó la Mona Lisa?",
-    "categoria": { "nombre": "Arte" },
-    "opciones": ["Leonardo da Vinci", "Pablo Picasso", "Vincent van Gogh", "Miguel Ángel"],
-    "respuestaCorrecta": "Leonardo da Vinci"
-  },
-  {
-    "id": 18,
-    "pregunta": "¿Cuál es el río más largo del mundo?",
-    "categoria": { "nombre": "Geografía" },
-    "opciones": ["Nilo", "Amazonas", "Misisipi", "Yangtsé"],
-    "respuestaCorrecta": "Nilo"
-  },
-  {
-    "id": 19,
-    "pregunta": "¿Qué lenguaje se usa principalmente para estilizar páginas web?",
-    "categoria": { "nombre": "Programación" },
-    "opciones": ["CSS", "JavaScript", "PHP", "Python"],
-    "respuestaCorrecta": "CSS"
-  },
-  {
-    "id": 20,
-    "pregunta": "¿Cuál es el planeta más cercano al Sol?",
-    "categoria": { "nombre": "Astronomía" },
-    "opciones": ["Mercurio", "Venus", "Tierra", "Marte"],
-    "respuestaCorrecta": "Mercurio"
-  },
-  {
-    "id": 21,
-    "pregunta": "¿Cuál es la capital de Australia?",
-    "categoria": { "nombre": "Geografía" },
-    "opciones": ["Canberra", "Sídney", "Melbourne", "Brisbane"],
-    "respuestaCorrecta": "Canberra"
-  },
-  {
-    "id": 22,
-    "pregunta": "¿Qué significa API?",
-    "categoria": { "nombre": "Programación" },
-    "opciones": ["Application Programming Interface", "Advanced Programming Integration", "Automated Program Installation", "Application Process Integration"],
-    "respuestaCorrecta": "Application Programming Interface"
-  },
-  {
-    "id": 23,
-    "pregunta": "¿Qué gas necesitan las plantas para realizar la fotosíntesis?",
-    "categoria": { "nombre": "Ciencia" },
-    "opciones": ["Dióxido de carbono", "Oxígeno", "Nitrógeno", "Hidrógeno"],
-    "respuestaCorrecta": "Dióxido de carbono"
-  },
-  {
-    "id": 24,
     "pregunta": "¿Quién fue el primer presidente de Estados Unidos?",
     "categoria": { "nombre": "Historia" },
-    "opciones": ["George Washington", "Thomas Jefferson", "Abraham Lincoln", "John Adams"],
+    "opciones": ["Thomas Jefferson", "George Washington", "Abraham Lincoln", "John Adams"],
     "respuestaCorrecta": "George Washington"
   },
   {
-    "id": 25,
-    "pregunta": "¿Cuántos jugadores tiene un equipo de baloncesto en cancha?",
+    "id": 13,
+    "pregunta": "¿Qué país tiene la mayor población del mundo?",
+    "categoria": { "nombre": "Geografía" },
+    "opciones": ["India", "China", "Estados Unidos", "Indonesia"],
+    "respuestaCorrecta": "China"
+  },
+  {
+    "id": 14,
+    "pregunta": "¿Qué escritor creó a Sherlock Holmes?",
+    "categoria": { "nombre": "Literatura" },
+    "opciones": ["Agatha Christie", "Arthur Conan Doyle", "Edgar Allan Poe", "J.K. Rowling"],
+    "respuestaCorrecta": "Arthur Conan Doyle"
+  },
+  {
+    "id": 15,
+    "pregunta": "¿Cuál es la capital de Australia?",
+    "categoria": { "nombre": "Geografía" },
+    "opciones": ["Sídney", "Melbourne", "Canberra", "Brisbane"],
+    "respuestaCorrecta": "Canberra"
+  },
+  {
+    "id": 16,
+    "pregunta": "¿Qué científico formuló la teoría de la relatividad?",
+    "categoria": { "nombre": "Ciencia" },
+    "opciones": ["Isaac Newton", "Albert Einstein", "Nikola Tesla", "Galileo Galilei"],
+    "respuestaCorrecta": "Albert Einstein"
+  },
+  {
+    "id": 17,
+    "pregunta": "¿Qué deporte utiliza un bate y una pelota pequeña y dura?",
     "categoria": { "nombre": "Deportes" },
-    "opciones": ["5", "6", "7", "4"],
-    "respuestaCorrecta": "5"
+    "opciones": ["Béisbol", "Cricket", "Golf", "Tenis"],
+    "respuestaCorrecta": "Béisbol"
+  },
+  {
+    "id": 18,
+    "pregunta": "¿En qué país se originaron los Juegos Olímpicos?",
+    "categoria": { "nombre": "Historia" },
+    "opciones": ["Italia", "Grecia", "Egipto", "China"],
+    "respuestaCorrecta": "Grecia"
+  },
+  {
+    "id": 19,
+    "pregunta": "¿Cuál es el océano más grande del mundo?",
+    "categoria": { "nombre": "Geografía" },
+    "opciones": ["Atlántico", "Índico", "Pacífico", "Ártico"],
+    "respuestaCorrecta": "Pacífico"
+  },
+  {
+    "id": 20,
+    "pregunta": "¿Qué elemento tiene el símbolo químico 'Fe'?",
+    "categoria": { "nombre": "Ciencia" },
+    "opciones": ["Fósforo", "Hierro", "Flúor", "Francio"],
+    "respuestaCorrecta": "Hierro"
+  },
+  {
+    "id": 21,
+    "pregunta": "¿Cuál es la capital de Noruega?",
+    "categoria": { "nombre": "Geografía" },
+    "opciones": ["Estocolmo", "Oslo", "Helsinki", "Copenhague"],
+    "respuestaCorrecta": "Oslo"
+  },
+  {
+    "id": 22,
+    "pregunta": "¿Quién descubrió la penicilina?",
+    "categoria": { "nombre": "Ciencia" },
+    "opciones": ["Alexander Fleming", "Louis Pasteur", "Marie Curie", "Gregor Mendel"],
+    "respuestaCorrecta": "Alexander Fleming"
+  },
+  {
+    "id": 23,
+    "pregunta": "¿En qué país se encuentra Machu Picchu?",
+    "categoria": { "nombre": "Geografía" },
+    "opciones": ["Bolivia", "Perú", "Ecuador", "Chile"],
+    "respuestaCorrecta": "Perú"
+  },
+  {
+    "id": 24,
+    "pregunta": "¿Cuál es la obra más famosa de Miguel de Cervantes?",
+    "categoria": { "nombre": "Literatura" },
+    "opciones": ["Don Quijote de la Mancha", "La Celestina", "El Lazarillo de Tormes", "La Regenta"],
+    "respuestaCorrecta": "Don Quijote de la Mancha"
+  },
+  {
+    "id": 25,
+    "pregunta": "¿Qué país ganó la Copa Mundial de Fútbol en 2018?",
+    "categoria": { "nombre": "Deportes" },
+    "opciones": ["Brasil", "Alemania", "Francia", "Argentina"],
+    "respuestaCorrecta": "Francia"
   },
   {
     "id": 26,
-    "pregunta": "¿En qué deporte se utiliza un green?",
-    "categoria": { "nombre": "Deportes" },
-    "opciones": ["Golf", "Tenis", "Cricket", "Croquet"],
-    "respuestaCorrecta": "Golf"
+    "pregunta": "¿Cuál es el símbolo químico del oro?",
+    "categoria": { "nombre": "Ciencia" },
+    "opciones": ["Ag", "Au", "Pb", "Fe"],
+    "respuestaCorrecta": "Au"
   },
   {
     "id": 27,
-    "pregunta": "¿Cuál es la unidad básica de la vida?",
+    "pregunta": "¿Quién fue el autor de la teoría de la evolución?",
     "categoria": { "nombre": "Ciencia" },
+    "opciones": ["Charles Darwin", "Gregor Mendel", "Louis Pasteur", "Isaac Newton"],
+    "respuestaCorrecta": "Charles Darwin"
+  },
+  {
+    "id": 28,
+    "pregunta": "¿Cuál es la capital de Sudáfrica?",
+    "categoria": { "nombre": "Geografía" },
+    "opciones": ["Johannesburgo", "Pretoria", "Ciudad del Cabo", "Durban"],
+    "respuestaCorrecta": "Pretoria"
+  },
+  {
+    "id": 29,
+    "pregunta": "¿Qué país tiene la bandera con un círculo rojo sobre fondo blanco?",
+    "categoria": { "nombre": "Geografía" },
+    "opciones": ["Japón", "Canadá", "Turquía", "Suiza"],
+    "respuestaCorrecta": "Japón"
+  },
+  {
+    "id": 30,
+    "pregunta": "¿Cuál es el libro sagrado del Islam?",
+    "categoria": { "nombre": "Religión" },
+    "opciones": ["Biblia", "Torá", "Corán", "Vedas"],
+    "respuestaCorrecta": "Corán"
+  },
+  {
+    "id": 31,
+    "pregunta": "¿Qué elemento es necesario para la respiración celular?",
+    "categoria": { "nombre": "Ciencia" },
+    "opciones": ["Dióxido de carbono", "Oxígeno", "Nitrógeno", "Hidrógeno"],
+    "respuestaCorrecta": "Oxígeno"
+  },
+  {
+    "id": 32,
+    "pregunta": "¿Quién compuso la Novena Sinfonía?",
+    "categoria": { "nombre": "Música" },
+    "opciones": ["Wolfgang Amadeus Mozart", "Johann Sebastian Bach", "Ludwig van Beethoven", "Franz Schubert"],
+    "respuestaCorrecta": "Ludwig van Beethoven"
+  },
+  {
+    "id": 33,
+    "pregunta": "¿Qué país es conocido como la Tierra del Sol Naciente?",
+    "categoria": { "nombre": "Geografía" },
+    "opciones": ["China", "Japón", "Corea del Sur", "Vietnam"],
+    "respuestaCorrecta": "Japón"
+  },
+  {
+    "id": 34,
+    "pregunta": "¿Cuál es la moneda oficial de Reino Unido?",
+    "categoria": { "nombre": "Economía" },
+    "opciones": ["Euro", "Libra esterlina", "Dólar", "Franco suizo"],
+    "respuestaCorrecta": "Libra esterlina"
+  },
+  {
+    "id": 35,
+    "pregunta": "¿Qué aparato mide la velocidad del viento?",
+    "categoria": { "nombre": "Ciencia" },
+    "opciones": ["Anemómetro", "Barómetro", "Higrómetro", "Altímetro"],
+    "respuestaCorrecta": "Anemómetro"
+  },
+  {
+    "id": 36,
+    "pregunta": "¿Qué evento marcó el inicio de la Revolución Francesa?",
+    "categoria": { "nombre": "Historia" },
+    "opciones": ["Toma de la Bastilla", "Declaración de Derechos", "Caída de Napoleón", "Batalla de Waterloo"],
+    "respuestaCorrecta": "Toma de la Bastilla"
+  },
+  {
+    "id": 37,
+    "pregunta": "¿Qué científico es conocido por la ley de la gravedad?",
+    "categoria": { "nombre": "Ciencia" },
+    "opciones": ["Galileo Galilei", "Isaac Newton", "Albert Einstein", "Nikola Tesla"],
+    "respuestaCorrecta": "Isaac Newton"
+  },
+  {
+    "id": 38,
+    "pregunta": "¿Cuál es el continente con más países?",
+    "categoria": { "nombre": "Geografía" },
+    "opciones": ["África", "Asia", "Europa", "América"],
+    "respuestaCorrecta": "África"
+  },
+  {
+    "id": 39,
+    "pregunta": "¿Quién es conocido como el padre del psicoanálisis?",
+    "categoria": { "nombre": "Psicología" },
+    "opciones": ["Carl Jung", "Sigmund Freud", "Ivan Pavlov", "Alfred Adler"],
+    "respuestaCorrecta": "Sigmund Freud"
+  },
+  {
+    "id": 40,
+    "pregunta": "¿Qué animal es conocido como el 'rey de la selva'?",
+    "categoria": { "nombre": "Biología" },
+    "opciones": ["Tigre", "León", "Elefante", "Jaguar"],
+    "respuestaCorrecta": "León"
+  },
+  {
+    "id": 41,
+    "pregunta": "¿Cuál es el país más grande del mundo en extensión territorial?",
+    "categoria": { "nombre": "Geografía" },
+    "opciones": ["Estados Unidos", "China", "Canadá", "Rusia"],
+    "respuestaCorrecta": "Rusia"
+  },
+  {
+    "id": 42,
+    "pregunta": "¿Quién escribió 'El Principito'?",
+    "categoria": { "nombre": "Literatura" },
+    "opciones": ["Antoine de Saint-Exupéry", "Jules Verne", "Victor Hugo", "Albert Camus"],
+    "respuestaCorrecta": "Antoine de Saint-Exupéry"
+  },
+  {
+    "id": 43,
+    "pregunta": "¿Qué órgano del cuerpo humano produce la insulina?",
+    "categoria": { "nombre": "Ciencia" },
+    "opciones": ["Páncreas", "Hígado", "Riñón", "Corazón"],
+    "respuestaCorrecta": "Páncreas"
+  },
+  {
+    "id": 44,
+    "pregunta": "¿En qué país se encuentra la Torre Eiffel?",
+    "categoria": { "nombre": "Geografía" },
+    "opciones": ["Italia", "España", "Francia", "Alemania"],
+    "respuestaCorrecta": "Francia"
+  },
+  {
+    "id": 45,
+    "pregunta": "¿Cuál es el nombre del satélite natural de la Tierra?",
+    "categoria": { "nombre": "Astronomía" },
+    "opciones": ["Luna", "Fobos", "Deimos", "Europa"],
+    "respuestaCorrecta": "Luna"
+  },
+  {
+    "id": 46,
+    "pregunta": "¿Qué científico desarrolló la teoría del Big Bang?",
+    "categoria": { "nombre": "Ciencia" },
+    "opciones": ["Stephen Hawking", "Albert Einstein", "Edwin Hubble", "Georges Lemaître"],
+    "respuestaCorrecta": "Georges Lemaître"
+  },
+  {
+    "id": 47,
+    "pregunta": "¿Cuál es la capital de Nueva Zelanda?",
+    "categoria": { "nombre": "Geografía" },
+    "opciones": ["Auckland", "Christchurch", "Wellington", "Hamilton"],
+    "respuestaCorrecta": "Wellington"
+  },
+  {
+    "id": 48,
+    "pregunta": "¿Cuál es la fórmula química del dióxido de carbono?",
+    "categoria": { "nombre": "Ciencia" },
+    "opciones": ["CO", "CO2", "C2O", "O2C"],
+    "respuestaCorrecta": "CO2"
+  },
+  {
+    "id": 49,
+    "pregunta": "¿Quién fue el primer hombre en orbitar la Tierra?",
+    "categoria": { "nombre": "Historia" },
+    "opciones": ["Neil Armstrong", "Yuri Gagarin", "Buzz Aldrin", "John Glenn"],
+    "respuestaCorrecta": "Yuri Gagarin"
+  },
+  {
+    "id": 50,
+    "pregunta": "¿En qué país se originó el tango?",
+    "categoria": { "nombre": "Cultura" },
+    "opciones": ["Uruguay", "Argentina", "Chile", "Brasil"],
+    "respuestaCorrecta": "Argentina"
+  },
+  {
+    "id": 51,
+    "pregunta": "¿Qué vitamina se produce en la piel con la exposición al sol?",
+    "categoria": { "nombre": "Ciencia" },
+    "opciones": ["Vitamina A", "Vitamina B12", "Vitamina C", "Vitamina D"],
+    "respuestaCorrecta": "Vitamina D"
+  },
+  {
+    "id": 52,
+    "pregunta": "¿Cuál es la montaña más alta del mundo?",
+    "categoria": { "nombre": "Geografía" },
+    "opciones": ["K2", "Monte Everest", "Annapurna", "Makalu"],
+    "respuestaCorrecta": "Monte Everest"
+  },
+  {
+    "id": 53,
+    "pregunta": "¿Qué instrumento tiene teclas blancas y negras y se toca con las manos?",
+    "categoria": { "nombre": "Música" },
+    "opciones": ["Guitarra", "Piano", "Violín", "Flauta"],
+    "respuestaCorrecta": "Piano"
+  },
+  {
+    "id": 54,
+    "pregunta": "¿Cuál es la capital de Turquía?",
+    "categoria": { "nombre": "Geografía" },
+    "opciones": ["Estambul", "Ankara", "Esmirna", "Bursa"],
+    "respuestaCorrecta": "Ankara"
+  },
+  {
+    "id": 55,
+    "pregunta": "¿Qué animal es conocido por construir presas en ríos?",
+    "categoria": { "nombre": "Biología" },
+    "opciones": ["Castor", "Nutria", "Cangrejo", "Nutria gigante"],
+    "respuestaCorrecta": "Castor"
+  },
+  {
+    "id": 56,
+    "pregunta": "¿Qué famoso físico desarrolló la ley del electromagnetismo?",
+    "categoria": { "nombre": "Ciencia" },
+    "opciones": ["James Clerk Maxwell", "Michael Faraday", "Nikola Tesla", "Thomas Edison"],
+    "respuestaCorrecta": "James Clerk Maxwell"
+  },
+  {
+    "id": 57,
+    "pregunta": "¿Cuál es el nombre del primer satélite artificial lanzado al espacio?",
+    "categoria": { "nombre": "Historia" },
+    "opciones": ["Sputnik 1", "Apollo 11", "Voyager 1", "Hubble"],
+    "respuestaCorrecta": "Sputnik 1"
+  },
+  {
+    "id": 58,
+    "pregunta": "¿Qué país tiene la mayor cantidad de islas en el mundo?",
+    "categoria": { "nombre": "Geografía" },
+    "opciones": ["Indonesia", "Canadá", "Suecia", "Filipinas"],
+    "respuestaCorrecta": "Suecia"
+  },
+  {
+    "id": 59,
+    "pregunta": "¿Qué país sudamericano tiene el mayor territorio?",
+    "categoria": { "nombre": "Geografía" },
+    "opciones": ["Argentina", "Brasil", "Perú", "Chile"],
+    "respuestaCorrecta": "Brasil"
+  },
+  {
+    "id": 60,
+    "pregunta": "¿Qué rey inglés firmó la Carta Magna?",
+    "categoria": { "nombre": "Historia" },
+    "opciones": ["Guillermo el Conquistador", "Juan sin Tierra", "Enrique VIII", "Ricardo Corazón de León"],
+    "respuestaCorrecta": "Juan sin Tierra"
+  },
+  {
+    "id": 61,
+    "pregunta": "¿Cuál es el idioma oficial de Brasil?",
+    "categoria": { "nombre": "Idiomas" },
+    "opciones": ["Español", "Portugués", "Francés", "Inglés"],
+    "respuestaCorrecta": "Portugués"
+  },
+  {
+    "id": 62,
+    "pregunta": "¿Quién pintó la 'Mona Lisa'?",
+    "categoria": { "nombre": "Arte" },
+    "opciones": ["Leonardo da Vinci", "Michelangelo", "Raphael", "Donatello"],
+    "respuestaCorrecta": "Leonardo da Vinci"
+  },
+  {
+    "id": 63,
+    "pregunta": "¿Cuál es la unidad básica de la vida?",
+    "categoria": { "nombre": "Biología" },
     "opciones": ["Célula", "Molécula", "Átomo", "Tejido"],
     "respuestaCorrecta": "Célula"
   },
   {
-    "id": 28,
-    "pregunta": "¿Qué es TypeScript?",
-    "categoria": { "nombre": "Programación" },
-    "opciones": ["Un superconjunto de JavaScript", "Un lenguaje de programación independiente", "Un framework de JavaScript", "Un sistema operativo"],
-    "respuestaCorrecta": "Un superconjunto de JavaScript"
-  },
-  {
-    "id": 29,
-    "pregunta": "¿En qué año se descubrió América?",
-    "categoria": { "nombre": "Historia" },
-    "opciones": ["1492", "1498", "1500", "1510"],
-    "respuestaCorrecta": "1492"
-  },
-  {
-    "id": 30,
-    "pregunta": "¿Qué elemento tiene el símbolo químico 'O'?",
-    "categoria": { "nombre": "Ciencia" },
-    "opciones": ["Oxígeno", "Oro", "Osmio", "Oganessón"],
-    "respuestaCorrecta": "Oxígeno"
-  },
-  {
-    "id": 31,
-    "pregunta": "¿Cuál es la montaña más alta del mundo?",
-    "categoria": { "nombre": "Geografía" },
-    "opciones": ["Monte Everest", "K2", "Aconcagua", "Mont Blanc"],
-    "respuestaCorrecta": "Monte Everest"
-  },
-  {
-    "id": 32,
-    "pregunta": "¿Qué es Git?",
-    "categoria": { "nombre": "Programación" },
-    "opciones": ["Sistema de control de versiones", "Lenguaje de programación", "Base de datos", "Framework de JavaScript"],
-    "respuestaCorrecta": "Sistema de control de versiones"
-  },
-  {
-    "id": 33,
-    "pregunta": "¿Qué instrumento toca un violinista?",
-    "categoria": { "nombre": "Música" },
-    "opciones": ["Violín", "Viola", "Violonchelo", "Contrabajo"],
-    "respuestaCorrecta": "Violín"
-  },
-  {
-    "id": 34,
-    "pregunta": "¿Cuál fue el primer país en enviar un humano al espacio?",
-    "categoria": { "nombre": "Historia" },
-    "opciones": ["Unión Soviética", "Estados Unidos", "China", "Japón"],
-    "respuestaCorrecta": "Unión Soviética"
-  },
-  {
-    "id": 35,
-    "pregunta": "¿Cuántos anillos tiene el símbolo olímpico?",
-    "categoria": { "nombre": "Deportes" },
-    "opciones": ["5", "4", "6", "3"],
-    "respuestaCorrecta": "5"
-  },
-  {
-    "id": 36,
-    "pregunta": "¿Qué país tiene forma de bota?",
-    "categoria": { "nombre": "Geografía" },
-    "opciones": ["Italia", "España", "Portugal", "Grecia"],
-    "respuestaCorrecta": "Italia"
-  },
-  {
-    "id": 37,
-    "pregunta": "¿Cuál es el navegador web más utilizado?",
-    "categoria": { "nombre": "Tecnología" },
-    "opciones": ["Google Chrome", "Safari", "Firefox", "Edge"],
-    "respuestaCorrecta": "Google Chrome"
-  },
-  {
-    "id": 38,
-    "pregunta": "¿Qué deporte se practica en un velódromo?",
-    "categoria": { "nombre": "Deportes" },
-    "opciones": ["Ciclismo", "Patinaje", "Atletismo", "Natación"],
-    "respuestaCorrecta": "Ciclismo"
-  },
-  {
-    "id": 39,
-    "pregunta": "¿Cuál es el país más pequeño del mundo?",
-    "categoria": { "nombre": "Geografía" },
-    "opciones": ["Vaticano", "Mónaco", "Nauru", "San Marino"],
-    "respuestaCorrecta": "Vaticano"
-  },
-  {
-    "id": 40,
-    "pregunta": "¿En qué continente está Egipto?",
-    "categoria": { "nombre": "Geografía" },
-    "opciones": ["África", "Asia", "Europa", "Medio Oriente"],
-    "respuestaCorrecta": "África"
-  },
-  {
-    "id": 41,
-    "pregunta": "¿Qué lenguaje de programación fue creado por Guido van Rossum?",
-    "categoria": { "nombre": "Programación" },
-    "opciones": ["Python", "Java", "C++", "Ruby"],
-    "respuestaCorrecta": "Python"
-  },
-  {
-    "id": 42,
-    "pregunta": "¿Cuál es el hueso más pequeño del cuerpo humano?",
-    "categoria": { "nombre": "Ciencia" },
-    "opciones": ["Estribo", "Falange", "Coxis", "Rótula"],
-    "respuestaCorrecta": "Estribo"
-  },
-  {
-    "id": 43,
-    "pregunta": "¿Qué famoso físico formuló la teoría de la relatividad?",
-    "categoria": { "nombre": "Ciencia" },
-    "opciones": ["Albert Einstein", "Isaac Newton", "Stephen Hawking", "Niels Bohr"],
-    "respuestaCorrecta": "Albert Einstein"
-  },
-  {
-    "id": 44,
-    "pregunta": "¿Cuál es la capital de Canadá?",
-    "categoria": { "nombre": "Geografía" },
-    "opciones": ["Ottawa", "Toronto", "Montreal", "Vancouver"],
-    "respuestaCorrecta": "Ottawa"
-  },
-  {
-    "id": 45,
-    "pregunta": "¿Qué famosa red social fue fundada por Mark Zuckerberg?",
-    "categoria": { "nombre": "Tecnología" },
-    "opciones": ["Facebook", "Twitter", "Instagram", "LinkedIn"],
-    "respuestaCorrecta": "Facebook"
-  },
-  {
-    "id": 46,
-    "pregunta": "¿Cuál es el metal más caro del mundo?",
-    "categoria": { "nombre": "Ciencia" },
-    "opciones": ["Rodio", "Oro", "Platino", "Paladio"],
-    "respuestaCorrecta": "Rodio"
-  },
-  {
-    "id": 47,
-    "pregunta": "¿Qué animal puede vivir sin agua durante más tiempo?",
-    "categoria": { "nombre": "Biología" },
-    "opciones": ["Rata canguro", "Camello", "Koala", "Tortuga del desierto"],
-    "respuestaCorrecta": "Rata canguro"
-  },
-  {
-    "id": 48,
-    "pregunta": "¿Qué país es el mayor productor de café del mundo?",
-    "categoria": { "nombre": "Economía" },
-    "opciones": ["Brasil", "Colombia", "Vietnam", "Etiopía"],
-    "respuestaCorrecta": "Brasil"
-  },
-  {
-    "id": 49,
-    "pregunta": "¿Qué instrumento musical tiene 88 teclas?",
-    "categoria": { "nombre": "Música" },
-    "opciones": ["Piano", "Órgano", "Sintetizador", "Acordeon"],
-    "respuestaCorrecta": "Piano"
-  },
-  {
-    "id": 50,
-    "pregunta": "¿Cuál es el símbolo químico del oro?",
-    "categoria": { "nombre": "Ciencia" },
-    "opciones": ["Au", "Ag", "Fe", "Cu"],
-    "respuestaCorrecta": "Au"
-  },
-  {
-    "id": 51,
-    "pregunta": "¿Qué sistema de base de datos utiliza el Task Tracker?",
-    "categoria": { "nombre": "Programación" },
-    "opciones": ["Supabase", "Firebase", "MongoDB", "MySQL"],
-    "respuestaCorrecta": "Supabase"
-  },
-  {
-    "id": 52,
-    "pregunta": "¿Qué relación existe entre la tabla tasks y users en Task Tracker?",
-    "categoria": { "nombre": "Programación" },
-    "opciones": ["FK user_id a auth.users", "FK task_id a users", "Relación muchos a muchos", "Sin relación"],
-    "respuestaCorrecta": "FK user_id a auth.users"
-  },
-  {
-    "id": 53,
-    "pregunta": "¿Qué se crea automáticamente cuando un usuario se registra en Task Tracker?",
-    "categoria": { "nombre": "Programación" },
-    "opciones": ["Perfil de usuario", "Tarea inicial", "Configuración de privacidad", "Notificación de bienvenida"],
-    "respuestaCorrecta": "Perfil de usuario"
-  },
-  {
-    "id": 54,
-    "pregunta": "¿Qué políticas están implementadas en las tablas de Task Tracker?",
-    "categoria": { "nombre": "Programación" },
-    "opciones": ["Políticas RLS", "Políticas CORS", "Políticas de caché", "Políticas de backup"],
-    "respuestaCorrecta": "Políticas RLS"
-  },
-  {
-    "id": 55,
-    "pregunta": "¿Qué significa RLS en el contexto de bases de datos?",
-    "categoria": { "nombre": "Programación" },
-    "opciones": ["Row Level Security", "Relational Linking System", "Remote Loading Service", "Runtime Logic Scripting"],
-    "respuestaCorrecta": "Row Level Security"
-  },
-  {
-    "id": 56,
-    "pregunta": "¿Cuál es el río más caudaloso del mundo?",
-    "categoria": { "nombre": "Geografía" },
-    "opciones": ["Amazonas", "Nilo", "Misisipi", "Yangtsé"],
-    "respuestaCorrecta": "Amazonas"
-  },
-  {
-    "id": 57,
-    "pregunta": "¿Qué ciudad es conocida como la 'Ciudad de los Canales'?",
-    "categoria": { "nombre": "Geografía" },
-    "opciones": ["Venecia", "Amsterdam", "Bangkok", "Estocolmo"],
-    "respuestaCorrecta": "Venecia"
-  },
-  {
-    "id": 58,
-    "pregunta": "¿Qué lenguaje de programación fue desarrollado por Microsoft?",
-    "categoria": { "nombre": "Programación" },
-    "opciones": ["C#", "Java", "Python", "PHP"],
-    "respuestaCorrecta": "C#"
-  },
-  {
-    "id": 59,
-    "pregunta": "¿Cuál es el lago más profundo del mundo?",
-    "categoria": { "nombre": "Geografía" },
-    "opciones": ["Lago Baikal", "Lago Superior", "Lago Tanganica", "Lago Caspian"],
-    "respuestaCorrecta": "Lago Baikal"
-  },
-  {
-    "id": 60,
-    "pregunta": "¿Qué significa SQL?",
-    "categoria": { "nombre": "Programación" },
-    "opciones": ["Structured Query Language", "Simple Question Language", "Standard Query Logic", "System Quality Level"],
-    "respuestaCorrecta": "Structured Query Language"
-  },
-  {
-    "id": 61,
-    "pregunta": "¿Qué animal es conocido como el 'Rey de la Selva'?",
-    "categoria": { "nombre": "Biología" },
-    "opciones": ["León", "Tigre", "Jaguar", "Elefante"],
-    "respuestaCorrecta": "León"
-  },
-  {
-    "id": 62,
-    "pregunta": "¿Cuál es el país más grande del mundo por área territorial?",
-    "categoria": { "nombre": "Geografía" },
-    "opciones": ["Rusia", "Canadá", "China", "Estados Unidos"],
-    "respuestaCorrecta": "Rusia"
-  },
-  {
-    "id": 63,
-    "pregunta": "¿Qué significa HTTP?",
-    "categoria": { "nombre": "Programación" },
-    "opciones": ["HyperText Transfer Protocol", "High Tech Transfer Process", "Hyperlink Text Transmission Procedure", "Home Tool Transfer Protocol"],
-    "respuestaCorrecta": "HyperText Transfer Protocol"
-  },
-  {
     "id": 64,
-    "pregunta": "¿Qué famoso físico está asociado con la ecuación E=mc²?",
-    "categoria": { "nombre": "Ciencia" },
-    "opciones": ["Albert Einstein", "Isaac Newton", "Niels Bohr", "Stephen Hawking"],
-    "respuestaCorrecta": "Albert Einstein"
+    "pregunta": "¿Qué país tiene la ciudad de Dubái?",
+    "categoria": { "nombre": "Geografía" },
+    "opciones": ["Arabia Saudita", "Emiratos Árabes Unidos", "Qatar", "Kuwait"],
+    "respuestaCorrecta": "Emiratos Árabes Unidos"
   },
   {
     "id": 65,
-    "pregunta": "¿Cuál es el componente principal de la atmósfera terrestre?",
-    "categoria": { "nombre": "Ciencia" },
-    "opciones": ["Nitrógeno", "Oxígeno", "Dióxido de carbono", "Argón"],
-    "respuestaCorrecta": "Nitrógeno"
+    "pregunta": "¿En qué año terminó la Segunda Guerra Mundial?",
+    "categoria": { "nombre": "Historia" },
+    "opciones": ["1945", "1939", "1941", "1950"],
+    "respuestaCorrecta": "1945"
   },
   {
     "id": 66,
-    "pregunta": "¿Qué es un framework en programación?",
-    "categoria": { "nombre": "Programación" },
-    "opciones": ["Estructura base para desarrollar software", "Un lenguaje de programación", "Un tipo de base de datos", "Un sistema operativo"],
-    "respuestaCorrecta": "Estructura base para desarrollar software"
+    "pregunta": "¿Cuál es la capital de México?",
+    "categoria": { "nombre": "Geografía" },
+    "opciones": ["Guadalajara", "Ciudad de México", "Monterrey", "Puebla"],
+    "respuestaCorrecta": "Ciudad de México"
   },
   {
     "id": 67,
-    "pregunta": "¿Cuál es la moneda oficial de Japón?",
-    "categoria": { "nombre": "Economía" },
-    "opciones": ["Yen", "Yuan", "Won", "Ringgit"],
-    "respuestaCorrecta": "Yen"
+    "pregunta": "¿Qué tipo de energía produce una central hidroeléctrica?",
+    "categoria": { "nombre": "Ciencia" },
+    "opciones": ["Energía solar", "Energía eólica", "Energía hidráulica", "Energía nuclear"],
+    "respuestaCorrecta": "Energía hidráulica"
   },
   {
     "id": 68,
-    "pregunta": "¿Qué es un algoritmo en programación?",
-    "categoria": { "nombre": "Programación" },
-    "opciones": ["Conjunto de instrucciones para resolver un problema", "Un tipo de variable", "Un lenguaje de programación", "Un error en el código"],
-    "respuestaCorrecta": "Conjunto de instrucciones para resolver un problema"
+    "pregunta": "¿Quién es el autor de 'Cien años de soledad'?",
+    "categoria": { "nombre": "Literatura" },
+    "opciones": ["Gabriel García Márquez", "Mario Vargas Llosa", "Julio Cortázar", "Isabel Allende"],
+    "respuestaCorrecta": "Gabriel García Márquez"
   },
   {
     "id": 69,
-    "pregunta": "¿Cuál es el océano más pequeño del mundo?",
+    "pregunta": "¿Cuál es la capital de Italia?",
     "categoria": { "nombre": "Geografía" },
-    "opciones": ["Ártico", "Atlántico", "Pacífico", "Índico"],
-    "respuestaCorrecta": "Ártico"
+    "opciones": ["Venecia", "Milán", "Roma", "Nápoles"],
+    "respuestaCorrecta": "Roma"
   },
   {
     "id": 70,
-    "pregunta": "¿Qué es CSS en desarrollo web?",
-    "categoria": { "nombre": "Programación" },
-    "opciones": ["Hojas de estilo en cascada", "Código de servidor seguro", "Sistema de scripts cliente", "Estructura de sitio computarizada"],
-    "respuestaCorrecta": "Hojas de estilo en cascada"
+    "pregunta": "¿Qué país tiene la bandera con franjas rojas y blancas y una estrella blanca en azul?",
+    "categoria": { "nombre": "Geografía" },
+    "opciones": ["Estados Unidos", "Cuba", "Puerto Rico", "Chile"],
+    "respuestaCorrecta": "Puerto Rico"
   },
   {
     "id": 71,
-    "pregunta": "¿Qué instrumento se utiliza para medir la presión atmosférica?",
-    "categoria": { "nombre": "Ciencia" },
-    "opciones": ["Barómetro", "Termómetro", "Higrómetro", "Anemómetro"],
-    "respuestaCorrecta": "Barómetro"
+    "pregunta": "¿Qué invento se atribuye a Thomas Edison?",
+    "categoria": { "nombre": "Historia" },
+    "opciones": ["Teléfono", "Bombilla eléctrica", "Radio", "Automóvil"],
+    "respuestaCorrecta": "Bombilla eléctrica"
   },
   {
     "id": 72,
-    "pregunta": "¿Qué significa DOM en desarrollo web?",
-    "categoria": { "nombre": "Programación" },
-    "opciones": ["Document Object Model", "Data Object Management", "Digital Ordinance Model", "Display Order Method"],
-    "respuestaCorrecta": "Document Object Model"
+    "pregunta": "¿Qué animal es el más rápido en tierra?",
+    "categoria": { "nombre": "Biología" },
+    "opciones": ["Leopardo", "Chita", "Guepardo", "León"],
+    "respuestaCorrecta": "Guepardo"
   },
   {
     "id": 73,
-    "pregunta": "¿Cuál es el desierto más grande del mundo?",
-    "categoria": { "nombre": "Geografía" },
-    "opciones": ["Sáhara", "Gobi", "Atacama", "Antártico"],
-    "respuestaCorrecta": "Antártico"
-  },
-  {
-    "id": 74,
-    "pregunta": "¿Qué es un bug en programación?",
-    "categoria": { "nombre": "Programación" },
-    "opciones": ["Un error en el código", "Una característica nueva", "Un tipo de variable", "Un algoritmo eficiente"],
-    "respuestaCorrecta": "Un error en el código"
-  },
-  {
-    "id": 75,
-    "pregunta": "¿Cuál es el elemento químico más abundante en el universo?",
-    "categoria": { "nombre": "Ciencia" },
-    "opciones": ["Hidrógeno", "Helio", "Oxígeno", "Carbono"],
-    "respuestaCorrecta": "Hidrógeno"
-  },
-  {
-    "id": 76,
-    "pregunta": "¿Qué es Angular?",
-    "categoria": { "nombre": "Programación" },
-    "opciones": ["Un framework de JavaScript", "Un lenguaje de programación", "Una base de datos", "Un sistema operativo"],
-    "respuestaCorrecta": "Un framework de JavaScript"
-  },
-  {
-    "id": 77,
-    "pregunta": "¿Cuál es la capital de Brasil?",
-    "categoria": { "nombre": "Geografía" },
-    "opciones": ["Brasilia", "Río de Janeiro", "São Paulo", "Salvador"],
-    "respuestaCorrecta": "Brasilia"
-  },
-  {
-    "id": 78,
-    "pregunta": "¿Qué es un componente en Angular?",
-    "categoria": { "nombre": "Programación" },
-    "opciones": ["Bloque de construcción reutilizable", "Una función JavaScript", "Un archivo CSS", "Una base de datos"],
-    "respuestaCorrecta": "Bloque de construcción reutilizable"
-  },
-  {
-    "id": 79,
-    "pregunta": "¿Qué planeta es conocido como el planeta rojo?",
+    "pregunta": "¿Qué planeta es conocido como el Planeta Rojo?",
     "categoria": { "nombre": "Astronomía" },
-    "opciones": ["Marte", "Venus", "Júpiter", "Saturno"],
+    "opciones": ["Venus", "Marte", "Júpiter", "Mercurio"],
     "respuestaCorrecta": "Marte"
   },
   {
+    "id": 74,
+    "pregunta": "¿Cuál es el símbolo químico del oxígeno?",
+    "categoria": { "nombre": "Ciencia" },
+    "opciones": ["O", "Ox", "Oxg", "Oy"],
+    "respuestaCorrecta": "O"
+  },
+  {
+    "id": 75,
+    "pregunta": "¿Cuál es el continente más pequeño en extensión?",
+    "categoria": { "nombre": "Geografía" },
+    "opciones": ["Oceanía", "Europa", "Antártida", "América"],
+    "respuestaCorrecta": "Oceanía"
+  },
+  {
+    "id": 76,
+    "pregunta": "¿Qué país es conocido por los canguros?",
+    "categoria": { "nombre": "Geografía" },
+    "opciones": ["Sudáfrica", "Australia", "India", "Canadá"],
+    "respuestaCorrecta": "Australia"
+  },
+  {
+    "id": 77,
+    "pregunta": "¿Quién es el autor de 'Don Quijote de la Mancha'?",
+    "categoria": { "nombre": "Literatura" },
+    "opciones": ["Miguel de Cervantes", "Lope de Vega", "García Lorca", "Juan Ramón Jiménez"],
+    "respuestaCorrecta": "Miguel de Cervantes"
+  },
+  {
+    "id": 78,
+    "pregunta": "¿Qué país tiene el mayor número de pirámides antiguas?",
+    "categoria": { "nombre": "Historia" },
+    "opciones": ["México", "Egipto", "Sudán", "Perú"],
+    "respuestaCorrecta": "Sudán"
+  },
+  {
+    "id": 79,
+    "pregunta": "¿Qué instrumento se usa para medir la temperatura?",
+    "categoria": { "nombre": "Ciencia" },
+    "opciones": ["Termómetro", "Barómetro", "Anemómetro", "Higrómetro"],
+    "respuestaCorrecta": "Termómetro"
+  },
+  {
     "id": 80,
-    "pregunta": "¿Qué significa API en programación?",
-    "categoria": { "nombre": "Programación" },
-    "opciones": ["Application Programming Interface", "Advanced Programming Integration", "Automated Program Instruction", "Application Process Integration"],
-    "respuestaCorrecta": "Application Programming Interface"
+    "pregunta": "¿Cuál es la capital de Japón?",
+    "categoria": { "nombre": "Geografía" },
+    "opciones": ["Osaka", "Kioto", "Tokio", "Nagoya"],
+    "respuestaCorrecta": "Tokio"
   },
   {
     "id": 81,
-    "pregunta": "¿Cuál es el hueso más largo del cuerpo humano?",
-    "categoria": { "nombre": "Biología" },
-    "opciones": ["Fémur", "Húmero", "Tibia", "Radio"],
-    "respuestaCorrecta": "Fémur"
-  },
-  {
-    "id": 82,
-    "pregunta": "¿Qué significa HTML?",
-    "categoria": { "nombre": "Programación" },
-    "opciones": ["HyperText Markup Language", "High Tech Modern Language", "Hyperlink Text Management Logic", "Home Tool Markup Language"],
-    "respuestaCorrecta": "HyperText Markup Language"
-  },
-  {
-    "id": 83,
-    "pregunta": "¿Cuál es la capital de Australia?",
-    "categoria": { "nombre": "Geografía" },
-    "opciones": ["Canberra", "Sydney", "Melbourne", "Brisbane"],
-    "respuestaCorrecta": "Canberra"
-  },
-  {
-    "id": 84,
-    "pregunta": "¿Qué es un servicio en Angular?",
-    "categoria": { "nombre": "Programación" },
-    "opciones": ["Clase que maneja la lógica de negocio", "Un componente visual", "Un archivo HTML", "Una directiva estructural"],
-    "respuestaCorrecta": "Clase que maneja la lógica de negocio"
-  },
-  {
-    "id": 85,
     "pregunta": "¿Cuál es el océano más grande del mundo?",
     "categoria": { "nombre": "Geografía" },
-    "opciones": ["Pacífico", "Atlántico", "Índico", "Ártico"],
+    "opciones": ["Atlántico", "Índico", "Pacífico", "Ártico"],
     "respuestaCorrecta": "Pacífico"
   },
   {
+    "id": 82,
+    "pregunta": "¿Quién escribió 'Romeo y Julieta'?",
+    "categoria": { "nombre": "Literatura" },
+    "opciones": ["William Shakespeare", "Charles Dickens", "Jane Austen", "Mark Twain"],
+    "respuestaCorrecta": "William Shakespeare"
+  },
+  {
+    "id": 83,
+    "pregunta": "¿Qué país es famoso por sus tulipanes y molinos de viento?",
+    "categoria": { "nombre": "Geografía" },
+    "opciones": ["Bélgica", "Países Bajos", "Dinamarca", "Suecia"],
+    "respuestaCorrecta": "Países Bajos"
+  },
+  {
+    "id": 84,
+    "pregunta": "¿Qué metal es líquido a temperatura ambiente?",
+    "categoria": { "nombre": "Ciencia" },
+    "opciones": ["Plomo", "Mercurio", "Oro", "Cobre"],
+    "respuestaCorrecta": "Mercurio"
+  },
+  {
+    "id": 85,
+    "pregunta": "¿En qué continente se encuentra el desierto del Sahara?",
+    "categoria": { "nombre": "Geografía" },
+    "opciones": ["Asia", "África", "América", "Australia"],
+    "respuestaCorrecta": "África"
+  },
+  {
     "id": 86,
-    "pregunta": "¿Qué es un observable en Angular?",
-    "categoria": { "nombre": "Programación" },
-    "opciones": ["Colección de eventos asíncronos", "Un tipo de componente", "Una directiva estructural", "Un método HTTP"],
-    "respuestaCorrecta": "Colección de eventos asíncronos"
+    "pregunta": "¿Quién pintó 'La Última Cena'?",
+    "categoria": { "nombre": "Arte" },
+    "opciones": ["Leonardo da Vinci", "Pablo Picasso", "Vincent van Gogh", "Michelangelo"],
+    "respuestaCorrecta": "Leonardo da Vinci"
   },
   {
     "id": 87,
-    "pregunta": "¿Qué animal es el símbolo nacional de Australia?",
-    "categoria": { "nombre": "Cultura" },
-    "opciones": ["Canguro", "Koala", "Emú", "Ornitorrinco"],
-    "respuestaCorrecta": "Canguro"
+    "pregunta": "¿Cuál es el símbolo químico del hierro?",
+    "categoria": { "nombre": "Ciencia" },
+    "opciones": ["Ir", "Fe", "In", "I"],
+    "respuestaCorrecta": "Fe"
   },
   {
     "id": 88,
-    "pregunta": "¿Qué es una directiva en Angular?",
-    "categoria": { "nombre": "Programación" },
-    "opciones": ["Instrucción en el DOM", "Un componente", "Un servicio", "Un módulo"],
-    "respuestaCorrecta": "Instrucción en el DOM"
+    "pregunta": "¿Qué deporte se practica en Wimbledon?",
+    "categoria": { "nombre": "Deportes" },
+    "opciones": ["Fútbol", "Tenis", "Cricket", "Rugby"],
+    "respuestaCorrecta": "Tenis"
   },
   {
     "id": 89,
-    "pregunta": "¿Cuál es la montaña más alta de América?",
-    "categoria": { "nombre": "Geografía" },
-    "opciones": ["Aconcagua", "Monte McKinley", "Monte Logan", "Pico Orizaba"],
-    "respuestaCorrecta": "Aconcagua"
-  },
-  {
-    "id": 90,
-    "pregunta": "¿Qué es el patrón MVC?",
-    "categoria": { "nombre": "Programación" },
-    "opciones": ["Modelo-Vista-Controlador", "Módulo-Versión-Componente", "Método-Variable-Clase", "Modelo-Variable-Constructor"],
-    "respuestaCorrecta": "Modelo-Vista-Controlador"
-  },
-  {
-    "id": 91,
-    "pregunta": "¿Cuál es el río más largo del mundo?",
-    "categoria": { "nombre": "Geografía" },
-    "opciones": ["Nilo", "Amazonas", "Yangtsé", "Misisipi"],
-    "respuestaCorrecta": "Nilo"
-  },
-  {
-    "id": 92,
-    "pregunta": "¿Qué es JSON?",
-    "categoria": { "nombre": "Programación" },
-    "opciones": ["JavaScript Object Notation", "Java Standard Object Network", "JavaScript Oriented Navigation", "Java Source Object Name"],
-    "respuestaCorrecta": "JavaScript Object Notation"
-  },
-  {
-    "id": 93,
-    "pregunta": "¿Cuál es el país con más habitantes del mundo?",
-    "categoria": { "nombre": "Geografía" },
-    "opciones": ["China", "India", "Estados Unidos", "Indonesia"],
-    "respuestaCorrecta": "China"
-  },
-  {
-    "id": 94,
-    "pregunta": "¿Qué es un módulo en Angular?",
-    "categoria": { "nombre": "Programación" },
-    "opciones": ["Contenedor de componentes y servicios", "Un tipo de componente", "Una directiva estructural", "Un método HTTP"],
-    "respuestaCorrecta": "Contenedor de componentes y servicios"
-  },
-  {
-    "id": 95,
-    "pregunta": "¿Cuál es la capital de Sudáfrica?",
-    "categoria": { "nombre": "Geografía" },
-    "opciones": ["Pretoria, Ciudad del Cabo y Bloemfontein", "Johannesburgo", "Ciudad del Cabo", "Durban"],
-    "respuestaCorrecta": "Pretoria, Ciudad del Cabo y Bloemfontein"
-  },
-  {
-    "id": 96,
-    "pregunta": "¿Qué es el binding en Angular?",
-    "categoria": { "nombre": "Programación" },
-    "opciones": ["Sincronización de datos", "Un tipo de componente", "Una directiva estructural", "Un método HTTP"],
-    "respuestaCorrecta": "Sincronización de datos"
-  },
-  {
-    "id": 97,
-    "pregunta": "¿Cuál es el país más pequeño de América?",
-    "categoria": { "nombre": "Geografía" },
-    "opciones": ["San Cristóbal y Nieves", "El Salvador", "Belice", "Panamá"],
-    "respuestaCorrecta": "San Cristóbal y Nieves"
-  },
-  {
-    "id": 98,
-    "pregunta": "¿Qué significa CORS en desarrollo web?",
-    "categoria": { "nombre": "Programación" },
-    "opciones": ["Cross-Origin Resource Sharing", "Create Object Resource System", "Cross-Object Response Service", "Create Origin Response Sharing"],
-    "respuestaCorrecta": "Cross-Origin Resource Sharing"
-  },
-  {
-    "id": 99,
     "pregunta": "¿Cuál es la capital de Canadá?",
     "categoria": { "nombre": "Geografía" },
-    "opciones": ["Ottawa", "Toronto", "Montreal", "Vancouver"],
+    "opciones": ["Toronto", "Vancouver", "Ottawa", "Montreal"],
     "respuestaCorrecta": "Ottawa"
   },
   {
+    "id": 90,
+    "pregunta": "¿Cuál es el gas más abundante en la atmósfera terrestre?",
+    "categoria": { "nombre": "Ciencia" },
+    "opciones": ["Oxígeno", "Nitrógeno", "Dióxido de carbono", "Argón"],
+    "respuestaCorrecta": "Nitrógeno"
+  },
+  {
+    "id": 91,
+    "pregunta": "¿Quién es el creador de la teoría de la relatividad?",
+    "categoria": { "nombre": "Ciencia" },
+    "opciones": ["Isaac Newton", "Nikola Tesla", "Albert Einstein", "Galileo Galilei"],
+    "respuestaCorrecta": "Albert Einstein"
+  },
+  {
+    "id": 92,
+    "pregunta": "¿Cuál es la capital de Egipto?",
+    "categoria": { "nombre": "Geografía" },
+    "opciones": ["Alejandría", "Luxor", "El Cairo", "Gizeh"],
+    "respuestaCorrecta": "El Cairo"
+  },
+  {
+    "id": 93,
+    "pregunta": "¿Qué órgano del cuerpo humano bombea la sangre?",
+    "categoria": { "nombre": "Ciencia" },
+    "opciones": ["Pulmones", "Corazón", "Hígado", "Riñones"],
+    "respuestaCorrecta": "Corazón"
+  },
+  {
+    "id": 94,
+    "pregunta": "¿Cuál es el país más poblado del mundo?",
+    "categoria": { "nombre": "Geografía" },
+    "opciones": ["India", "Estados Unidos", "China", "Indonesia"],
+    "respuestaCorrecta": "China"
+  },
+  {
+    "id": 95,
+    "pregunta": "¿Quién fue el primer presidente de Estados Unidos?",
+    "categoria": { "nombre": "Historia" },
+    "opciones": ["Thomas Jefferson", "Abraham Lincoln", "George Washington", "John Adams"],
+    "respuestaCorrecta": "George Washington"
+  },
+  {
+    "id": 96,
+    "pregunta": "¿Qué ciudad es conocida como la Ciudad de la Luz?",
+    "categoria": { "nombre": "Geografía" },
+    "opciones": ["Roma", "París", "Londres", "Nueva York"],
+    "respuestaCorrecta": "París"
+  },
+  {
+    "id": 97,
+    "pregunta": "¿Cuál es el nombre del proceso por el que las plantas producen su alimento?",
+    "categoria": { "nombre": "Biología" },
+    "opciones": ["Fotosíntesis", "Respiración", "Fermentación", "Transpiración"],
+    "respuestaCorrecta": "Fotosíntesis"
+  },
+  {
+    "id": 98,
+    "pregunta": "¿Qué instrumento mide la presión atmosférica?",
+    "categoria": { "nombre": "Ciencia" },
+    "opciones": ["Barómetro", "Termómetro", "Anemómetro", "Higrómetro"],
+    "respuestaCorrecta": "Barómetro"
+  },
+  {
+    "id": 99,
+    "pregunta": "¿Cuál es la capital de Australia?",
+    "categoria": { "nombre": "Geografía" },
+    "opciones": ["Sídney", "Melbourne", "Canberra", "Brisbane"],
+    "respuestaCorrecta": "Canberra"
+  },
+  {
     "id": 100,
-    "pregunta": "¿Qué es TypeScript?",
-    "categoria": { "nombre": "Programación" },
-    "opciones": ["Superconjunto tipado de JavaScript", "Un lenguaje de programación independiente", "Un framework de JavaScript", "Un sistema operativo"],
-    "respuestaCorrecta": "Superconjunto tipado de JavaScript"
+    "pregunta": "¿En qué año llegó Cristóbal Colón a América?",
+    "categoria": { "nombre": "Historia" },
+    "opciones": ["1492", "1500", "1485", "1510"],
+    "respuestaCorrecta": "1492"
   }
 ]
+

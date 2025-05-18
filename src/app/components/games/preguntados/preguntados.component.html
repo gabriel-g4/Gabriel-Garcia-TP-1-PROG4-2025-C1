@@ -24,7 +24,7 @@
     <div class="container-pregunta">
         
         @if(preguntaActual) {
-            <p class="pregunta"> {{ preguntaActual.pregunta }} </p>
+            <p class="pregunta"> Pregunta {{preguntasVistas.length}}: <span class="italic">{{ preguntaActual.pregunta }}</span></p>
         }
    
         @if(respuestaSeleccionada) {
