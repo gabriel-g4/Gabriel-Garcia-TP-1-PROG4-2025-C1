@@ -2,16 +2,8 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { GithubService } from '../../../services/github.service';
+import { GithubUser } from '../../../models';
 
-interface GithubUser {
-  avatarUrl: string,
-  login: string,
-  name: string,
-  bio: string,
-  location: string,
-  publicRepos: number,
-  exists: boolean
-}
 
 @Component({
   selector: 'app-quien-soy',

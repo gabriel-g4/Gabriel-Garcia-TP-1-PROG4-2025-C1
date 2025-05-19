@@ -1,1 +1,7 @@
 export * from './pregunta.interface'
+export * from './datos-nivel.interface'
+export * from './mapa.interface'
+export * from './posicion.interface'
+export * from './carta.interface'
+export * from './github-user.interface'
+export * from './juego.interface'

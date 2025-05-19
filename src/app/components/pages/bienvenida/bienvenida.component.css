@@ -67,6 +67,11 @@ h2, h3{
     visibility: hidden;
 }
 
+.titulo {
+    text-align: center;
+    font-size: 2.25rem;
+    margin: 25px;
+}
 
 /*  */
   

@@ -18,16 +18,16 @@
 }
 
 .pared {
-  background-color: red;
+  /* background-color: red; */
   /* background-image: url("assets/images/juego-propio/block_04.png"); */
   transition: all 0.1s linear;
 }
 
-.caja  {
-  background-color: burlywood;
-  /* background-image: url("assets/images/juego-propio/crate_02.png"); */
+/* .caja  {
+  /* background-color: burlywood; */
+  /* background-image: url("assets/images/juego-propio/crate_02.png"); 
 
-}
+} */
 
 
 
@@ -87,4 +87,29 @@
     height: 25px;
     box-sizing: content-box;
   }
+}
+
+
+#resultados {
+  --pico-background-color: var(--pico-primary-background);
+  --pico-border-color: var(--pico-primary-border);
+  --pico-color: var(--pico-primary-inverse);
+  --pico-box-shadow: var(--pico-button-box-shadow, 0 0 0 rgba(0, 0, 0, 0));
+  padding: var(--pico-form-element-spacing-vertical) var(--pico-form-element-spacing-horizontal);
+  border: var(--pico-border-width) solid var(--pico-border-color);
+  border-radius: var(--pico-border-radius);
+  outline: none;
+  background-color: var(--pico-background-color);
+  box-shadow: var(--pico-box-shadow);
+  color: var(--pico-color);
+  font-weight: var(--pico-font-weight);
+  font-size: 1rem;
+  line-height: var(--pico-line-height);
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  transition: background-color var(--pico-transition), border-color var(--pico-transition), color var(--pico-transition), box-shadow var(--pico-transition);
 }

@@ -1,12 +1,9 @@
 import { Component } from '@angular/core';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { RouterLink, RouterLinkActive } from '@angular/router';
+import { Juego } from '../../../models';
 
-export interface Tile {
-  text: string;
-  img_url: string;
-  url: string;
-}
+
 
 @Component({
   selector: 'app-bienvenida',
@@ -17,7 +14,7 @@ export interface Tile {
 export class BienvenidaComponent {
 
 
-  tiles: Tile[] = [
+  juegos: Juego[] = [
     {text: 'Ahorcado', img_url: 'assets/images/ahorcado-portada.png', url: '/ahorcado'},
     {text: 'Mayor-menor', img_url: "assets/images/mayor-menor-portada.png", url: '/mayor-menor'},
     {text: 'Preguntados', img_url: "assets/images/preguntados-portada.png", url: '/preguntados'},

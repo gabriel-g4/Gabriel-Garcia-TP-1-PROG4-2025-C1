@@ -3,12 +3,8 @@ import { CommonModule } from '@angular/common';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { SupabaseService } from '../../../services/supabase.service';
 import { AuthService } from '../../../services/auth.service';
+import { Carta } from '../../../models';
 
-
-interface Carta {
-    imagen_url: string,
-    valor: number
-}
 
 @Component({
   selector: 'app-mayor-menor',

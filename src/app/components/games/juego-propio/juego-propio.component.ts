@@ -1,33 +1,20 @@
 import { CommonModule } from '@angular/common';
-import { HostListener, Component } from '@angular/core';
+import { HostListener, Component, OnDestroy } from '@angular/core';
+import { SupabaseService } from '../../../services/supabase.service';
+import { AuthService } from '../../../services/auth.service';
+import { RouterLink, RouterLinkActive } from '@angular/router';
+import { DatosNivel, Mapa, Posicion } from '../../../models';
 
-interface Mapa {
-  texto: string
-  titulo: string,
-  comentarios: string
-}
-
-
-interface Posicion {
-  fila: number,
-  columna: number
-}
-
-interface DatosNivel {
-  nivel: number
-  movimientos: number
-  reinicios: number
-}
 
 @Component({
   selector: 'app-juego-propio',
-  imports: [CommonModule],
+  imports: [CommonModule, RouterLink, RouterLinkActive],
   templateUrl: './juego-propio.component.html',
   styleUrl: './juego-propio.component.css'
 })
 
 
-export class JuegoPropioComponent {
+export class JuegoPropioComponent implements OnDestroy{
 
     dataMapas: Mapa[] = [
     {
@@ -872,18 +859,21 @@ level`,
 
   ]
 
+  user: any;
   nivelOriginal: any;
   posicionJugador!: Posicion;
   nivelActual!: string [][] ;
   step = 64;
   levelOver = false
   necesarioParaGanar: number = 0;
+  arrayDatosNiveles : DatosNivel[]= [];
  
 
   datosNivel : DatosNivel = {
     "movimientos": 0,
     "nivel": 1,
-    "reinicios": -1
+    "reinicios": -1,
+    "ganado": false
   }
 
 
@@ -900,9 +890,41 @@ textoMapa = this.dataMapas[this.datosNivel.nivel - 1]
 
 
 
-  constructor() {
+  constructor(private supabase: SupabaseService, private authService: AuthService) {
     this.reiniciarNivel()
+    this.authService.session$.subscribe(session => {
+        if (session?.user) {
+            // Asignamos el usuario autenticado
+            this.user = session.user;
+            console.log('Usuario autenticado:', this.user);
+        } else {
+            console.log('Usuario no autenticado');
+        }
+        });
   }
+
+  ngOnDestroy(){
+    let esta = false;
+    for (const datos of this.arrayDatosNiveles) {
+      if (datos.nivel == this.datosNivel.nivel) {
+        esta = true;
+      }
+    }
+
+    if(!esta) {
+      const copia = { ...this.datosNivel};
+
+      this.arrayDatosNiveles.push(copia)
+    }
+
+    console.log(`esta ${esta}`)
+    console.log(this.datosNivel)
+    console.log(this.arrayDatosNiveles)
+
+    this.saveGameResult();
+  }
+
+  
 
   @HostListener('window:keydown', ['$event'])
   handleKey(event: KeyboardEvent) {
@@ -1062,9 +1084,10 @@ textoMapa = this.dataMapas[this.datosNivel.nivel - 1]
     this.necesarioParaGanar += this.nivelOriginal.flat().filter((simbolo: string) => simbolo === '*').length;
     this.necesarioParaGanar += this.nivelOriginal.flat().filter((simbolo: string) => simbolo === '+').length;
 
-    // this.necesarioParaGanar = 1;
+    this.necesarioParaGanar = 1;
     this.datosNivel.reinicios++
     this.datosNivel.movimientos = 0;
+    this.datosNivel.ganado = false;
   }
 
 
@@ -1074,13 +1097,17 @@ textoMapa = this.dataMapas[this.datosNivel.nivel - 1]
     console.log(`Necesario para ganar ${this.necesarioParaGanar}. Actual: ${cantidadActual}`)
 
     if(cantidadActual == this.necesarioParaGanar){
+      this.datosNivel.ganado = true;
       this.levelOver = true;
     }
 
   }
 
   pasarNivel() {
+    const copia = { ...this.datosNivel};
+    this.arrayDatosNiveles.push(copia);
     this.datosNivel.nivel++;
+    this.datosNivel.reinicios = 0;
     this.levelOver = false;
     this.reiniciarNivel()
     this.datosNivel.reinicios -= 1;
@@ -1106,6 +1133,32 @@ textoMapa = this.dataMapas[this.datosNivel.nivel - 1]
       }
       throw new Error(`Valor '${valor}' no encontrado en la matriz`);
     }
+
+    async saveGameResult(): Promise<void> {
+
+      let reinicios_totales = this.arrayDatosNiveles.reduce((total, nivel) => total + nivel.reinicios, 0)
+      let movimientos_totales = this.arrayDatosNiveles.reduce((total, nivel) => total + nivel.movimientos, 0)
+
+      const { error } = await this.supabase.getClient()
+        .from('sokoban')
+        .insert([
+          {
+            email: this.user.email,
+            puntos: this.arrayDatosNiveles.length * 1000 - movimientos_totales - reinicios_totales,
+            nivel_maximo: this.arrayDatosNiveles.length,
+            movimientos_totales: movimientos_totales,
+            reinicios_totales: reinicios_totales,
+            niveles: this.arrayDatosNiveles,
+            user_id: this.user.id, 
+          }
+        ]);
+
+      if (error) {
+        console.error('Error al guardar el juego:', error);
+      } else {
+        console.log('Juego guardado con éxito');
+      }
+  }
 
 
 }
