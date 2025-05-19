@@ -46,3 +46,11 @@ input[type="email"], input[type="password"] {
 a {
     text-align: center;
 }
+
+.mensaje {
+    text-align: center;
+    margin: 10px auto;
+    padding: 15px;
+    border: 1px solid rgba(255, 0, 0, 0.5);
+    border-radius: 5px;
+}
