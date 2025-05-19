@@ -1,8 +1,8 @@
 
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { GithubService } from '../../../services/github.service';
-import { GithubUser } from '../../../models';
+import { GithubService } from '../../services/github.service';
+import { GithubUser } from '../../models';
 
 
 @Component({

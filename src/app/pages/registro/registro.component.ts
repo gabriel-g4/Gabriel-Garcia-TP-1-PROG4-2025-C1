@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ReactiveFormsModule, FormControl, FormGroup, Validators, AbstractControl, ValidationErrors, ValidatorFn } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import { DatabaseService } from '../../../services/database.service';
+import { DatabaseService } from '../../services/database.service';
 import { RouterLink, RouterLinkActive, Router } from '@angular/router';
 
 export const ValidatorRepeatedPassword = (password: FormControl): ValidatorFn => {

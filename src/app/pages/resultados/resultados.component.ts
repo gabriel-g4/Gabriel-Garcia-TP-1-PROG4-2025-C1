@@ -11,7 +11,7 @@
 // }
 
 import { Component, OnInit } from '@angular/core';
-import { SupabaseService } from '../../../services/supabase.service';
+import { SupabaseService } from '../../services/supabase.service';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 

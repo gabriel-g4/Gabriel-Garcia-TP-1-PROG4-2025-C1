@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { RouterLink, RouterLinkActive } from '@angular/router';
-import { Juego } from '../../../models';
+import { Juego } from '../../models';
 
 
 
