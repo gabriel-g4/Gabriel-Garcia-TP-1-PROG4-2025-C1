@@ -4,20 +4,31 @@ section {
     width: 75vw;
 }
 
-img {
+.img-github {
     width: 194px;
     height: 194px;
     border-radius: 1000px;
     border: 1px solid rgb(231, 229, 229);
 }
 
-img:hover{
+.img-github:hover{
     opacity: 0.5;
     transform: scale(1.05);
     border: none;
 }
 
-.github-card {
+img.juego {
+    margin: 0 auto;
+    height: 200px;
+    width: 350px;
+    transition:  transform 0.5s;
+}
+
+img.juego:hover {
+    transform: scale(1.15);
+}
+
+.card {
     background-color: var(--pico-background-color);
     margin: 50px auto;
     padding: 20px;
@@ -26,10 +37,17 @@ img:hover{
     border: 1px solid rgba(100, 100, 100, 0.125);
 }
 
-ul {
+.explicacion {
+    width: 70vw;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.datos-github {
     text-align: left;
     li {
-
         list-style-type: disc;
     }
 
@@ -38,4 +56,15 @@ ul {
         transition: 0.1s;
         transform: scale(1.05);
     }
+}
+
+.reglas {
+    text-align: left;
+    font-style:oblique;
+
+    
+}
+
+h4 {
+    color: var(--pico-primary);
 }

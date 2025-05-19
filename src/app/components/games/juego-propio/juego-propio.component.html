@@ -1,0 +1,67 @@
+<div class="titulos">
+    <div class="separador">
+        <h1 class="titulo"> 
+            Sokoban ! 
+        </h1>
+        <button (click)="reiniciarNivel()"> Reiniciar nivel </button>
+    </div>
+    <p> 
+        <span> Acomoda todas las cajas en su lugar. Pulsa R para reiniciar el nivel. </span>
+
+        <span class="datos">
+            <span> Nivel: {{datosNivel.nivel}} </span> <span> Movimientos: {{datosNivel.movimientos}} </span> <span> Reinicios : {{ datosNivel.reinicios }}</span>
+        </span>
+    </p>
+    
+    
+    
+</div>
+
+@if(levelOver){
+    <div class="level-over">
+        <h2>Ganaste!</h2>
+        <button (click)="pasarNivel()"> Siguiente nivel -> </button>
+    </div>
+}
+
+<div class="container">
+    @for (fila of nivelActual; track $index; let iFila = $index){
+        @for(tile of fila; track $index; let iColumna = $index) {
+             @if(tile == '#') {
+
+                 <div class="tile pared" [style.left.px]="iColumna * 64" [style.top.px]="iFila * 64"
+                 [style.backgroundImage]="'url(assets/images/juego-propio/block_04.png)'"> </div>
+
+             } @else if (tile == '$') {
+
+                <div class="tile caja" [style.left.px]="iColumna * 64" [style.top.px]="iFila * 64"
+                [style.backgroundImage]="'url(assets/images/juego-propio/crate_02.png)'"> </div>
+
+             } @else if (tile == '.') {
+
+                <div class="tile destino" [style.left.px]="iColumna * 64" [style.top.px]="iFila * 64"
+                [style.backgroundImage]="'url(assets/images/juego-propio/environment_06.png)'"> </div>
+
+             } @else if (tile == '*') {
+
+                <div class="tile caja-destino" [style.left.px]="iColumna * 64" [style.top.px]="iFila * 64"
+                [style.backgroundImage]="'url(assets/images/juego-propio/crate_05.png)'"> </div>
+
+             } @else if (tile == '@') {
+
+                <div class="tile jugador" [style.left.px]="iColumna * 64" [style.top.px]="iFila * 64"
+                [style.backgroundImage]="'url(assets/images/juego-propio/player_23.png)'"> </div>
+
+             } @else if (tile == '+') {
+
+                <div class="tile jugador-destino" [style.left.px]="iColumna * 64" [style.top.px]="iFila * 64"
+                [style.backgroundImage]="'url(assets/images/juego-propio/player_05.png)'"> </div>
+
+             } @else if (tile == '-') {
+
+                <div class="tile vacio" [style.left.px]="iColumna * 64" [style.top.px]="iFila * 64"> </div>
+                
+             }
+        }
+    }
+</div>

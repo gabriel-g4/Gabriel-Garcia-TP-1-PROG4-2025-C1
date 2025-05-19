@@ -1,6 +1,3 @@
-
-
-
 <select [(ngModel)]="juegoSeleccionado" (change)="cargarResultados()">
   <option *ngFor="let juego of juegos" [value]="juego">{{ juego }}</option>
 </select>

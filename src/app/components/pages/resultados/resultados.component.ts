@@ -25,7 +25,7 @@ import { FormsModule } from '@angular/forms';
 })
 
 export class ResultadosComponent implements OnInit {
-  juegos = ['ahorcado', 'mayor-menor', 'preguntados'];
+  juegos = ['ahorcado', 'mayor-menor', 'preguntados', 'juego-propio'];
   juegoSeleccionado = 'ahorcado';
   columnas: any[] = []
 

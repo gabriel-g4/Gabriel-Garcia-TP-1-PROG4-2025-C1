@@ -50,6 +50,11 @@ export const routes: Routes = [
 
     },
     {
+        path: "juego-propio",
+        loadComponent: () => import('./components/games/juego-propio/juego-propio.component').then(c => c.JuegoPropioComponent),
+        canActivate: [authGuard]
+    },
+    {
         path: "resultados",
         loadComponent: ()=> import('./components/pages/resultados/resultados.component').then(c => c.ResultadosComponent),
         canActivate: [authGuard]

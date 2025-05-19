@@ -2,7 +2,7 @@ export default `<!doctype html>
 <html lang="en">
 <head><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
   <meta charset="utf-8">
-  <title>PrimerTp</title>
+  <title>Sala de juegos</title>
   <base href="C:/Program Files/Git/Gabriel-Garcia-TP-1-PROG4-2025-C1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">

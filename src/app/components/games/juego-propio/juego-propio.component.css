@@ -1,0 +1,90 @@
+.container {
+  margin: 50px auto;
+  width: 1000px;
+  height: 1000px;
+  position: relative;
+}
+
+.tile {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+}
+
+.jugador {
+  /* background-color: white;  */
+  /* background-image: url("assets/images/juego-propio/player_23.png"); */
+  transition: all 0.1s linear;
+}
+
+.pared {
+  background-color: red;
+  /* background-image: url("assets/images/juego-propio/block_04.png"); */
+  transition: all 0.1s linear;
+}
+
+.caja  {
+  background-color: burlywood;
+  /* background-image: url("assets/images/juego-propio/crate_02.png"); */
+
+}
+
+
+
+.caja-destino {
+  background-color: rgb(222, 184, 135, 0.5);
+  /* background-image: url("assets/images/juego-propio/crate_05.png"); */
+}
+
+.jugador-destino {
+  background-color: rgb(255, 255, 255, 0.5);
+  /* background-image: url("assets/images/juego-propio/player_05.png"); */
+
+}
+
+
+.titulos {
+
+  button {
+    display: inline-block;
+  }
+  
+  span {
+    font-style: italic;
+    color: var(--pico-background-color);
+
+  }
+
+  p{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  font-style: italic;
+  width: 90vw;
+  margin: 0 auto;
+  margin-top: 15px;
+
+}
+
+.level-over {
+  text-align: center;
+}
+
+
+.datos {
+  display: flex;
+  gap: 15px;
+}
+
+.separador {
+  display: flex;
+  justify-content: space-between;
+  height: fit-content;
+
+  button {
+    padding: 10px;
+    height: 25px;
+    box-sizing: content-box;
+  }
+}

@@ -1,10 +1,10 @@
 
 <section *ngIf="userData.exists">
-    <div class="github-card">
+    <div class="card">
         <h3> Mis datos de github. </h3>
     
-        <img [src]="userData.avatarUrl" alt="Foto de perfil github">
-        <ul>
+        <img class="img-github" [src]="userData.avatarUrl" alt="Foto de perfil github">
+        <ul class="datos-github">
             <li *ngIf="userData.name">
                 <p> Nombre : <b>{{ userData.name }}</b> </p>
             </li>
@@ -19,13 +19,40 @@
             </li>
             <li>
                 <p> Repositorios públicos : <b>{{ userData.publicRepos }}</b></p>
-            </li>
+            </li>    
         </ul>
+        <a href="https://github.com/gabriel-g4">Link al perfil</a>
     </div>
 </section>
 
-<section>
-    <h3> Mi juego personalizado </h3>
+<section class="card explicacion">
+    <h3> Juego propio </h3>
+    <h4> Sokoban </h4>
+    <p>
+        Sokoban (también <b>Soko-ban, Soko-Ban y Soukoban</b>) es la transcripción de un término japonés (<b>倉庫番</b>) que significa algo parecido a «guarda de almacén», pero ante todo, es el nombre de un tipo de rompecabezas en forma de videojuego en el que hay que guiar a un personajillo a través de una habitación para que empuje unas cajas hasta situarlas en ciertos puntos de destino. Las reglas son muy simples: 
+    </p>
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quasi sapiente laudantium harum nesciunt labore dolor, explicabo similique sint accusamus commodi et minima consectetur rerum? Nobis, in voluptatibus excepturi eum sit officiis natus cupiditate fuga voluptatem velit, amet reprehenderit quia dolorum aperiam asperiores facilis ipsum a ipsam placeat officia adipisci!</p>
+        <ul class="reglas">
+            <li>
+                Para empujar, el personaje debe estar detrás de la caja. No puede empujar desde un lado ni tirar hacia sí.
+            </li>
+            <li>
+                No puede empujar dos cajas a la vez (pesan demasiado).
+            </li>
+            <li>
+                Tampoco puede subirse a las cajas para abrirse camino, debe pasar limpiamente entre ellas y las paredes.
+            </li>
+        </ul>
+    
+
+        <img class="juego" src="assets/images/juego-propio/primer-sokoban.png" alt="Primer juego de sokoban, 1982" title="Primer juego de sokoban, 1982">
+        
+        <p>
+            Este juego fue inventado por <b>Hiroyuki Imabayashi</b> en <b>1981</b> y publicado en Japón en 1982 por su compañía <b>Thinking Rabbit</b>. Pero su fama mundial empezó a partir del lanzamiento, varios años después, de la versión de Spectrum HoloByte para IBM-PC.
+        </p>
+        
+        <p>
+            Se han hecho y se siguen haciendo muchísimas otras versiones para todas las plataformas imaginables, incluyendo ordenadores, videoconsolas, teléfonos móviles, agendas electrónicas, calculadoras, cámaras digitales... y muchas para <b>jugar en un navegador de Internet</b>...
+        </p>
+        
 </section>
