@@ -4,7 +4,7 @@
   <h1 class="titulo pulsando"> Bienvenido a la Sala de juegos</h1>
   
   <mat-grid-list cols="2" rowHeight="2:1.5" gutterSize="0px">
-    @for (juego of juegos; track juego) {
+    @for (juego of juegos; track $index) {
       <a routerLink="{{juego.url}}" routerLinkActive="active">
         <mat-grid-tile class="holographic-card">
           <img [src]="juego.img_url" [alt]="juego.text">

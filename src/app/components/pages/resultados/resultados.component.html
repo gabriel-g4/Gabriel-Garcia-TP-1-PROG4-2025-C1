@@ -21,7 +21,7 @@
         <table class="resultados">
             <thead>
                 <tr>
-                    @for (columna of columnas ; track columna) {  
+                    @for (columna of columnas ; track $index) {  
                         <th>{{columna}}</th> 
                     }
                     
@@ -46,7 +46,7 @@
     <table class="top" *ngIf="top.length > 0">
         <thead>
             <tr>
-                @for (columna of columnas ; track columna) {  
+                @for (columna of columnas ; track $index) {  
                     <th>{{columna}}</th> 
                 }
             </tr>

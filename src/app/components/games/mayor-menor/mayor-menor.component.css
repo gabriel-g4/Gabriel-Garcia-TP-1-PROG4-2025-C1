@@ -66,6 +66,9 @@
   transition: background-color var(--pico-transition), border-color var(--pico-transition), color var(--pico-transition), box-shadow var(--pico-transition);
 }
 
+.italic  {
+    font-style: italic;
+}
 
 .game-over {
     margin: 25px auto;

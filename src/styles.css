@@ -47,3 +47,9 @@ a {
 .pulsando {
   animation: pulse 3s infinite;
 }
+
+
+.boton-especial {
+  background-color: var(--pico-form-element-background-color);
+  color: var(--pico-h1-color);
+}

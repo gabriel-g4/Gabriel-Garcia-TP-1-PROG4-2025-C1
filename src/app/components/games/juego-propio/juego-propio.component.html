@@ -3,8 +3,11 @@
         <h1 class="titulo"> 
             Sokoban ! 
         </h1>
-        <button (click)="reiniciarNivel()"> Reiniciar nivel </button>
-        <a routerLink="/resultados" routerLinkActive="active" id="resultados"> Resultados </a>
+        <div class="right">
+            <button class="boton-especial" (click)="reiniciarNivel()"> Reiniciar nivel </button>
+            <a routerLink="/resultados" routerLinkActive="active" id="resultados"> Resultados </a>
+
+        </div>
     </div>
     <p> 
         <span> Acomoda todas las cajas en su lugar. Pulsa R para reiniciar el nivel. </span>
@@ -20,8 +23,8 @@
 
 @if(levelOver){
     <div class="level-over">
-        <h2>Ganaste!</h2>
-        <button (click)="pasarNivel()"> Siguiente nivel -> </button>
+        <h2 class="pulsando">Ganaste!</h2>
+        <button class="boton-especial" (click)="pasarNivel()"> Siguiente nivel -> </button>
     </div>
 }
 
@@ -51,7 +54,7 @@
              } @else if (tile == '@') {
 
                 <div class="tile jugador" [style.left.px]="iColumna * 64" [style.top.px]="iFila * 64"
-                [style.backgroundImage]="'url(assets/images/juego-propio/player_23.png)'"> </div>
+                [style.backgroundImage]="'url(assets/images/juego-propio/player_05.png)'"> </div>
 
              } @else if (tile == '+') {
 

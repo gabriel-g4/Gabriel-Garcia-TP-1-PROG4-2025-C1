@@ -69,6 +69,10 @@
 
 .level-over {
   text-align: center;
+  h2 {
+    color: var(--pico-background-color);
+  }
+
 }
 
 
@@ -84,10 +88,23 @@
 
   button {
     padding: 10px;
-    height: 25px;
+    height: 40px;
     box-sizing: content-box;
   }
+
+  a {
+    padding: 10px;
+    height: 27px;
+    box-sizing: content-box;
+
+  }
 }
+
+.right {
+  display: flex;
+  gap: 25px;
+}
+
 
 
 #resultados {

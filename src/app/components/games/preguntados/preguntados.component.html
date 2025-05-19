@@ -30,7 +30,7 @@
         <div class="opciones">
             @if (preguntaActual) {
                 <ul>
-                    @for(opcion of preguntaActual.opciones; track opcion){
+                    @for(opcion of preguntaActual.opciones; track $index){
                         <li>
                             <button [disabled]="respuestaSeleccionada" 
                             (click)="respuesta(preguntaActual, opcion)" 

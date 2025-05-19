@@ -150,7 +150,7 @@ export class JuegoPropioComponent implements OnDestroy{
         '----##########\n#####--------####\n#-----#---$--#@-#\n#-#######$####--###\n#-#----##-#--#$-..#\n#-#-$-----#--#--#.#\n#-#-$--#-----#$-..#\n#-#--###-##-----#.#\n#-###--#--#--#$-..#\n#-#----#--####--#.#\n#-#$---$--$--#$-..#\n#----$-#-$-$-#--#.#\n####-$###----#$-..#\n---#----$$-###....#\n---#------##-######\n---########',
       titulo: '20X',
       comentarios:
-        'Sokoban2 #10. Arranged and rotated. Minus nine(!) boxes. In the XSokoban levelset the boxes at H6 and J10 and the goals at O11 and O13 were removed. NO CAMBIES NADA',
+        'Sokoban2 #10. Arranged and rotated. Minus nine(!) boxes. In the XSokoban levelset the boxes at H6 and J10 and the goals at O11 and O13 were removed.',
     },
     {
       texto:
@@ -860,8 +860,8 @@ level`,
   ]
 
   user: any;
-  nivelOriginal: any;
   posicionJugador!: Posicion;
+  nivelOriginal!: string[][];
   nivelActual!: string [][] ;
   step = 64;
   levelOver = false
@@ -1148,7 +1148,7 @@ textoMapa = this.dataMapas[this.datosNivel.nivel - 1]
             nivel_maximo: this.arrayDatosNiveles.length,
             movimientos_totales: movimientos_totales,
             reinicios_totales: reinicios_totales,
-            niveles: this.arrayDatosNiveles,
+            niveles: JSON.stringify(this.arrayDatosNiveles),
             user_id: this.user.id, 
           }
         ]);
