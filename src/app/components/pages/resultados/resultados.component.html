@@ -21,8 +21,10 @@
         <table class="resultados">
             <thead>
                 <tr>
-                    @for (columna of columnas ; track $index) {  
-                        <th>{{columna}}</th> 
+                    @for (columna of columnasPropios ; track $index) { 
+                        @if(columna != "user_id") {
+                            <th>{{columna}}</th> 
+                        }
                     }
                     
                 </tr>
@@ -31,7 +33,14 @@
                 @for (resultado of resultados| keyvalue; track resultado.key) {
                     <tr>
                         @for (par of resultado.value | keyvalue; track $index;) {
-                            <td> {{resultado.value[columnas[$index]]}}</td>
+                           
+                            @if (columnasPropios[$index] == "created_at") {
+                            <td> {{resultado.value[columnasPropios[$index]] | date:'YYYY-MM-dd HH:mm' }}</td>
+                            }
+                            @else if(columnasPropios[$index] != "user_id" ) {
+                                <td> {{resultado.value[columnasPropios[$index]]}}</td>
+                                 
+                            }
                         }
                     </tr>
                     }
@@ -42,12 +51,14 @@
     } 
 </div>
 
-<div class="content" [hidden]="activeTab !== 2">
+<div class="content"  *ngIf="activeTab === 2">
     <table class="top" *ngIf="top.length > 0">
         <thead>
             <tr>
-                @for (columna of columnas ; track $index) {  
-                    <th>{{columna}}</th> 
+                @for (columna of columnasTop ; track $index) {  
+                    @if(columna != "user_id") {
+                        <th>{{columna}}</th> 
+                    }
                 }
             </tr>
         </thead>
@@ -55,7 +66,12 @@
             @for (resultado of top| keyvalue; track resultado.key) {
                 <tr>
                     @for (par of resultado.value | keyvalue; track $index;) {
-                        <td> {{resultado.value[columnas[$index]]}}</td>
+                        @if (columnasTop[$index] == "created_at") {
+                            <td> {{resultado.value[columnasTop[$index]] | date:'YYYY-MM-dd HH:mm' }}</td>
+                        }
+                        @else if(columnasTop[$index] != "user_id" ) {
+                            <td> {{resultado.value[columnasTop[$index]]}}</td>
+                        } 
                     }
                 </tr>
                 }

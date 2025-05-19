@@ -52,5 +52,6 @@ input[type="submit"] {
 
 .metadata {
     font-size: 0.75rem;
-    text-align: right;
+    display: flex;
+    justify-content: space-between;
 }

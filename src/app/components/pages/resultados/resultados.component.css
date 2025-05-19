@@ -2,7 +2,7 @@ table {
     background-color: var(--pico-primary);
     overflow-x: scroll;
     width: 50vw;
-    margin: 0 auto;
+    margin: 25px auto;
     overflow-x: scroll;
 }
 

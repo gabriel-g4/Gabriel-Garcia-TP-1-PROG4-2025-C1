@@ -27,7 +27,8 @@ import { FormsModule } from '@angular/forms';
 export class ResultadosComponent implements OnInit {
   juegos = ['ahorcado', 'mayor-menor', 'preguntados', 'sokoban'];
   juegoSeleccionado = 'ahorcado';
-  columnas: any[] = []
+  columnasPropios: string[] = []
+  columnasTop: string[] = []
 
   resultados: any[] = [];
   top: any[] = [];
@@ -67,39 +68,26 @@ export class ResultadosComponent implements OnInit {
       .order('created_at', { ascending: false });
 
     if (!error) {
-      console.log("DATA")
-      console.log(data)
       if (data.length > 0) {
-        this.columnas = Object.keys(data[0]);
-        console.log("COLUMNAS")
-        console.log(this.columnas)
+        this.columnasPropios = Object.keys(data[0]);
       }
       this.resultados = data;
-      this.top = [];
     }
   }
 
   async cargarTop() {
     const tabla = this.juegoSeleccionado;
 
-    let query = this.supabase.getClient()
+    const { data, error } = await this.supabase.getClient()
       .from(tabla)
       .select('*')
       .order('puntos', { ascending: false})
       .limit(10);
-
-    // Personalizamos el ranking por juego
     
-
-    const { data, error } = await query;
     if (!error) {
       this.top = data;
-      console.log("TOP")
-      console.log(data)
       if (data.length > 0) {
-        this.columnas = Object.keys(data[0]);
-        console.log("COLUMNAS")
-        console.log(this.columnas)
+        this.columnasTop = Object.keys(data[0]);
       }
     }
     if (error) throw error;

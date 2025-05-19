@@ -916,11 +916,6 @@ textoMapa = this.dataMapas[this.datosNivel.nivel - 1]
 
       this.arrayDatosNiveles.push(copia)
     }
-
-    console.log(`esta ${esta}`)
-    console.log(this.datosNivel)
-    console.log(this.arrayDatosNiveles)
-
     this.saveGameResult();
   }
 
@@ -1074,17 +1069,21 @@ textoMapa = this.dataMapas[this.datosNivel.nivel - 1]
   }
 
   reiniciarNivel(){
-    console.log(this.nivelOriginal)
+    // Crea un nivel nuevo
     this.nivelOriginal = this.mapaDesdeTexto(this.dataMapas[this.datosNivel.nivel - 1].texto)
+
+    // Hace una copia, para modificar la copia y guardar el original
     this.nivelActual = this.nivelOriginal.map((f: string[]) => f.slice());
-    console.log(this.nivelOriginal)
-    console.log(this.nivelActual)
+
     this.posicionJugador = this.encontrarPosicion('@');
+
     this.necesarioParaGanar = this.nivelOriginal.flat().filter((simbolo: string) => simbolo === '.').length;
     this.necesarioParaGanar += this.nivelOriginal.flat().filter((simbolo: string) => simbolo === '*').length;
     this.necesarioParaGanar += this.nivelOriginal.flat().filter((simbolo: string) => simbolo === '+').length;
 
-    this.necesarioParaGanar = 1;
+    // Sirve para debug, descomentar para ganar rapido.
+    //this.necesarioParaGanar = 1;
+    
     this.datosNivel.reinicios++
     this.datosNivel.movimientos = 0;
     this.datosNivel.ganado = false;

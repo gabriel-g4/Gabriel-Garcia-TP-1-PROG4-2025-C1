@@ -6,11 +6,14 @@
         <div class="messages">
             <div *ngFor="let msg of (messages$ | async)">
                 <div class="message" [attr.style]="msg.email == user.email ? 'margin-left: auto;' : ''">
-                    <p class="text" [attr.style]="msg.email == user.email ? 'background-color: aliceblue;' : ''"> {{ msg.mensaje }} </p>
-                    <p class="metadata">
-                        <strong class="email"> {{ msg.email || "sin email" }} </strong>  
-                        <span class="date">{{ msg.created_at | date:'HH:mm:ss dd/MM/yyyy' }}</span>
-                    </p>
+                    <p class="text" [attr.style]="msg.email == user.email ? 'background-color: #1487c4;' : ''"> {{ msg.mensaje }} </p>
+                    <div class="metadata">
+                        <span class="date">{{ msg.created_at | date:'dd/MM' }}</span>
+                        <div>
+                            <strong class="email"> {{ msg.email || "sin email" }} </strong> - 
+                            <span class="date">{{ msg.created_at | date:'HH:mm' }}</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
