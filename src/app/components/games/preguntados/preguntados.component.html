@@ -1,14 +1,6 @@
-<p>preguntados works!</p>
-
-
-@for (pregunta of preguntasVistas; track pregunta) {
-    @if(preguntasVistas.length > 0){
-        {{ pregunta.pregunta }}
-    }
-}
 
 <section class="preguntados"> 
-    <h2> Preguntados! </h2>
+    <h2 class="pulsando" > Preguntados! </h2>
 
     @if(gameOver){
         <h3> Juego terminado! </h3>
