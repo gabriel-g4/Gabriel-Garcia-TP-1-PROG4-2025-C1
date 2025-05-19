@@ -12,25 +12,28 @@ export class DatabaseService {
 
   constructor(private supabase: SupabaseService) {}
 
-    register(email: string, password: string): boolean {
-      let success = false;
-      this.supabase.getClient().auth.signUp({
-        email: email,
-        password: password
-      }).then(({data, error}) => {
+    async register(email: string, password: string): Promise<{ success: boolean; error?: string }> {
+      try {
+        const { data, error } = await this.supabase.getClient().auth.signUp({
+          email,
+          password,
+        });
+
         if (error) {
-          console.error("Error: ", error.message);
-        } else {
-          console.log(data)
-          alert("registro exitoso")
-          success = true;
+          console.error("Error al registrarse:", error.message);
+          return { success: false, error: error.message };
         }
-      })
-  
-      return success;
+
+        console.log("Registro exitoso", data);
+        return { success: true };
+      } catch (err) {
+        console.error("Error inesperado:", err);
+        return { success: false, error: 'Error inesperado al registrarse' };
+      }
     }
+
     
-   login (email: string, password: string): boolean {
+   async login (email: string, password: string) {
       let success = false;
       this.supabase.getClient().auth.signInWithPassword({
           email: email,
